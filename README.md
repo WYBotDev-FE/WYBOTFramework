@@ -10,7 +10,7 @@ WYBOTFramework仅供经过认证的第三方开发者使用。
 
 ### Swift Package Manager
 
-在XCode中选择Swift package -> Add Package dependency,使用git@github.com:wybotdev/WYBOT.git 添加package到项目中。
+在XCode中选择Swift package -> Add Package dependency,使用git@github.com:WYBotDev-FE/WYBOTFramework.git 添加package到项目中。
 然后在项目中```import WYBOTFramewokr```按下面的列子使用
 
 ## Fucntions
