@@ -12,6 +12,12 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension CoreBluetooth.CBPeripheral {
+  public var advDataLocalName: Swift.String? {
+    get
+    set
+  }
+}
 public struct Device : Swift.Codable, Swift.Equatable, Swift.Identifiable {
   public static func == (lhs: WYBOTFramework.Device, rhs: WYBOTFramework.Device) -> Swift.Bool
   public var id: Swift.String
