@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WYBOTFramework
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name WYBOTFramework
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1
 import CoreBluetooth
 import CryptoKit
 import Foundation
@@ -279,7 +280,7 @@ public enum WYStatus : Swift.Int {
     get
   }
 }
-public enum WYCleanMode : Swift.Int {
+public enum WYCleanMode : Swift.Int, Swift.Sendable {
   case floor
   case wall
   case combo
@@ -287,6 +288,15 @@ public enum WYCleanMode : Swift.Int {
   case waterline
   case strong
   case eco
+  case dirtHunting
+  case area
+  case dirtHuntingTest
+  case a1_0
+  case a1_1
+  case a1_2
+  case a1_3
+  case f1_smart
+  case f1_standard
   case none
   public func strings() -> Swift.String
   public func icons() -> Swift.String
@@ -472,8 +482,8 @@ public enum WYType : Swift.Codable {
   case battery
   case floatBattery
   public static func == (a: WYBOTFramework.WYType, b: WYBOTFramework.WYType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -484,8 +494,8 @@ public enum WYControls : Swift.Codable {
   case lift
   case area
   public static func == (a: WYBOTFramework.WYControls, b: WYBOTFramework.WYControls) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -497,8 +507,8 @@ public enum WYSensors : Swift.Codable {
   case depth
   case temperature
   public static func == (a: WYBOTFramework.WYSensors, b: WYBOTFramework.WYSensors) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -512,8 +522,8 @@ public enum WYSchedules : Swift.Codable {
   case delay
   case duration
   public static func == (a: WYBOTFramework.WYSchedules, b: WYBOTFramework.WYSchedules) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -532,8 +542,8 @@ public enum WYPatterns : Swift.Codable {
   public func icons() -> Swift.String
   public func IntString() -> Swift.String
   public static func == (a: WYBOTFramework.WYPatterns, b: WYBOTFramework.WYPatterns) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -543,8 +553,8 @@ public enum WYCombos : Swift.Codable {
   case once
   case twice
   public static func == (a: WYBOTFramework.WYCombos, b: WYBOTFramework.WYCombos) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }

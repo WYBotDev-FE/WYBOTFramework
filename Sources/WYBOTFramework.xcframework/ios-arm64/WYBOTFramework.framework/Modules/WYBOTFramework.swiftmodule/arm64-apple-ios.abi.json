@@ -10385,6 +10385,339 @@
           },
           {
             "kind": "Var",
+            "name": "dirtHunting",
+            "printedName": "dirtHunting",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.WYCleanMode.Type) -> WYBOTFramework.WYCleanMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WYCleanMode",
+                    "printedName": "WYBOTFramework.WYCleanMode",
+                    "usr": "s:14WYBOTFramework11WYCleanModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.WYCleanMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WYCleanMode",
+                        "printedName": "WYBOTFramework.WYCleanMode",
+                        "usr": "s:14WYBOTFramework11WYCleanModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework11WYCleanModeO11dirtHuntingyA2CmF",
+            "mangledName": "$s14WYBOTFramework11WYCleanModeO11dirtHuntingyA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "area",
+            "printedName": "area",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.WYCleanMode.Type) -> WYBOTFramework.WYCleanMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WYCleanMode",
+                    "printedName": "WYBOTFramework.WYCleanMode",
+                    "usr": "s:14WYBOTFramework11WYCleanModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.WYCleanMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WYCleanMode",
+                        "printedName": "WYBOTFramework.WYCleanMode",
+                        "usr": "s:14WYBOTFramework11WYCleanModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework11WYCleanModeO4areayA2CmF",
+            "mangledName": "$s14WYBOTFramework11WYCleanModeO4areayA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "dirtHuntingTest",
+            "printedName": "dirtHuntingTest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.WYCleanMode.Type) -> WYBOTFramework.WYCleanMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WYCleanMode",
+                    "printedName": "WYBOTFramework.WYCleanMode",
+                    "usr": "s:14WYBOTFramework11WYCleanModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.WYCleanMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WYCleanMode",
+                        "printedName": "WYBOTFramework.WYCleanMode",
+                        "usr": "s:14WYBOTFramework11WYCleanModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework11WYCleanModeO15dirtHuntingTestyA2CmF",
+            "mangledName": "$s14WYBOTFramework11WYCleanModeO15dirtHuntingTestyA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "a1_0",
+            "printedName": "a1_0",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.WYCleanMode.Type) -> WYBOTFramework.WYCleanMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WYCleanMode",
+                    "printedName": "WYBOTFramework.WYCleanMode",
+                    "usr": "s:14WYBOTFramework11WYCleanModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.WYCleanMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WYCleanMode",
+                        "printedName": "WYBOTFramework.WYCleanMode",
+                        "usr": "s:14WYBOTFramework11WYCleanModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework11WYCleanModeO4a1_0yA2CmF",
+            "mangledName": "$s14WYBOTFramework11WYCleanModeO4a1_0yA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "a1_1",
+            "printedName": "a1_1",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.WYCleanMode.Type) -> WYBOTFramework.WYCleanMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WYCleanMode",
+                    "printedName": "WYBOTFramework.WYCleanMode",
+                    "usr": "s:14WYBOTFramework11WYCleanModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.WYCleanMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WYCleanMode",
+                        "printedName": "WYBOTFramework.WYCleanMode",
+                        "usr": "s:14WYBOTFramework11WYCleanModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework11WYCleanModeO4a1_1yA2CmF",
+            "mangledName": "$s14WYBOTFramework11WYCleanModeO4a1_1yA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "a1_2",
+            "printedName": "a1_2",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.WYCleanMode.Type) -> WYBOTFramework.WYCleanMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WYCleanMode",
+                    "printedName": "WYBOTFramework.WYCleanMode",
+                    "usr": "s:14WYBOTFramework11WYCleanModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.WYCleanMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WYCleanMode",
+                        "printedName": "WYBOTFramework.WYCleanMode",
+                        "usr": "s:14WYBOTFramework11WYCleanModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework11WYCleanModeO4a1_2yA2CmF",
+            "mangledName": "$s14WYBOTFramework11WYCleanModeO4a1_2yA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "a1_3",
+            "printedName": "a1_3",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.WYCleanMode.Type) -> WYBOTFramework.WYCleanMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WYCleanMode",
+                    "printedName": "WYBOTFramework.WYCleanMode",
+                    "usr": "s:14WYBOTFramework11WYCleanModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.WYCleanMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WYCleanMode",
+                        "printedName": "WYBOTFramework.WYCleanMode",
+                        "usr": "s:14WYBOTFramework11WYCleanModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework11WYCleanModeO4a1_3yA2CmF",
+            "mangledName": "$s14WYBOTFramework11WYCleanModeO4a1_3yA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "f1_smart",
+            "printedName": "f1_smart",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.WYCleanMode.Type) -> WYBOTFramework.WYCleanMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WYCleanMode",
+                    "printedName": "WYBOTFramework.WYCleanMode",
+                    "usr": "s:14WYBOTFramework11WYCleanModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.WYCleanMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WYCleanMode",
+                        "printedName": "WYBOTFramework.WYCleanMode",
+                        "usr": "s:14WYBOTFramework11WYCleanModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework11WYCleanModeO8f1_smartyA2CmF",
+            "mangledName": "$s14WYBOTFramework11WYCleanModeO8f1_smartyA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "f1_standard",
+            "printedName": "f1_standard",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.WYCleanMode.Type) -> WYBOTFramework.WYCleanMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WYCleanMode",
+                    "printedName": "WYBOTFramework.WYCleanMode",
+                    "usr": "s:14WYBOTFramework11WYCleanModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.WYCleanMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WYCleanMode",
+                        "printedName": "WYBOTFramework.WYCleanMode",
+                        "usr": "s:14WYBOTFramework11WYCleanModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework11WYCleanModeO11f1_standardyA2CmF",
+            "mangledName": "$s14WYBOTFramework11WYCleanModeO11f1_standardyA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
             "name": "none",
             "printedName": "none",
             "children": [
@@ -10593,6 +10926,13 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -22552,6 +22892,51 @@
           },
           {
             "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ContiguousBytes",
             "printedName": "ContiguousBytes",
             "usr": "s:10Foundation15ContiguousBytesP",
@@ -22598,51 +22983,6 @@
             ],
             "usr": "s:10Foundation26DecodableWithConfigurationP",
             "mangledName": "$s10Foundation26DecodableWithConfigurationP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.UInt8]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt8",
-                            "printedName": "Swift.UInt8",
-                            "usr": "s:s5UInt8V"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
           }
         ]
       },
@@ -23241,6 +23581,41 @@
           },
           {
             "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
             "name": "ReferenceConvertible",
             "printedName": "ReferenceConvertible",
             "children": [
@@ -23285,41 +23660,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
             "name": "Transferable",
             "printedName": "Transferable",
             "children": [
@@ -23354,847 +23694,910 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/Peripherial.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/Peripherial.swift",
       "kind": "StringLiteral",
       "offset": 1725,
       "length": 18,
       "value": "\"AdvDataLocalName\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYDevice.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYDevice.swift",
       "kind": "BooleanLiteral",
       "offset": 956,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYDevice.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYDevice.swift",
       "kind": "BooleanLiteral",
       "offset": 992,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYDevice.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYDevice.swift",
       "kind": "BooleanLiteral",
       "offset": 1028,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYDevice.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYDevice.swift",
       "kind": "BooleanLiteral",
       "offset": 1221,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
       "offset": 232,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "BooleanLiteral",
       "offset": 1939,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "BooleanLiteral",
       "offset": 1982,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "Array",
       "offset": 2017,
       "length": 24,
       "value": "[\"dreame-x13b348t\"]"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
       "offset": 49921,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
       "offset": 50050,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 193,
       "length": 4,
       "value": "0x10"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 221,
       "length": 4,
       "value": "0x20"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 249,
       "length": 4,
       "value": "0x30"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 277,
       "length": 4,
       "value": "0x40"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 305,
       "length": 4,
       "value": "0x50"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 333,
       "length": 4,
       "value": "0x60"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 4,
       "value": "0x70"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 389,
       "length": 4,
       "value": "0x80"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 417,
       "length": 4,
       "value": "0x90"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 445,
       "length": 4,
       "value": "0xa0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 473,
       "length": 4,
       "value": "0xb0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 501,
       "length": 4,
       "value": "0xc0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 529,
       "length": 4,
       "value": "0xd0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 557,
       "length": 4,
       "value": "0xe0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 716,
       "length": 11,
       "value": "0b00001000"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 753,
       "length": 11,
       "value": "0b00000000"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 790,
       "length": 11,
       "value": "0b00000010"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 827,
       "length": 11,
       "value": "0b00000100"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 864,
       "length": 11,
       "value": "0b00000001"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 1499,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "BooleanLiteral",
       "offset": 1530,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "BooleanLiteral",
       "offset": 1650,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 1903,
       "length": 4,
       "value": "4096"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 2500,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "BooleanLiteral",
       "offset": 2519,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "BooleanLiteral",
       "offset": 2636,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 2830,
       "length": 4,
       "value": "4096"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "StringLiteral",
       "offset": 3591,
       "length": 12,
       "value": "\"mqtt_write\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
       "kind": "IntegerLiteral",
       "offset": 3661,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Http\/WeatherService.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Http\/WeatherService.swift",
       "kind": "StringLiteral",
       "offset": 121,
       "length": 34,
       "value": "\"095068b5817f508c2c082da744d27445\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Http\/WeatherService.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Http\/WeatherService.swift",
       "kind": "StringLiteral",
       "offset": 174,
       "length": 42,
       "value": "\"https:\/\/api.openweathermap.org\/data\/2.5\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Util\/Async+.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Util\/Async+.swift",
       "kind": "BooleanLiteral",
       "offset": 2820,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/BluetoothManager.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/BluetoothManager.swift",
       "kind": "StringLiteral",
       "offset": 148,
       "length": 38,
       "value": "\"000000FF-0000-1000-8000-00805F9B34FB\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/BluetoothManager.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/BluetoothManager.swift",
       "kind": "BooleanLiteral",
       "offset": 376,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 672,
+      "offset": 561,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
       "kind": "StringLiteral",
-      "offset": 1046,
+      "offset": 935,
       "length": 6,
       "value": "\"data\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 2145,
+      "offset": 2034,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
       "offset": 130,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
       "offset": 145,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
       "offset": 161,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
       "offset": 176,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
       "offset": 196,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
       "offset": 215,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
       "offset": 233,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
       "offset": 251,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
       "offset": 265,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
       "offset": 284,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
       "offset": 301,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 352,
+      "offset": 365,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 360,
+      "offset": 376,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 371,
+      "offset": 390,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 383,
+      "offset": 405,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 394,
+      "offset": 419,
       "length": 9,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 410,
+      "offset": 438,
       "length": 6,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 423,
+      "offset": 454,
       "length": 3,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 433,
-      "length": 4,
+      "offset": 467,
+      "length": 11,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 1209,
+      "offset": 488,
+      "length": 4,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 502,
+      "length": 15,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 527,
+      "length": 4,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 541,
+      "length": 4,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 555,
+      "length": 4,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 569,
+      "length": 4,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 583,
+      "length": 8,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 601,
+      "length": 11,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 622,
+      "length": 4,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2640,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 1217,
+      "offset": 2648,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 1232,
+      "offset": 2663,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 1246,
+      "offset": 2677,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 1613,
+      "offset": 3044,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 2526,
+      "offset": 3957,
       "length": 8,
       "value": "\"poolId\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 2549,
+      "offset": 3980,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 2571,
+      "offset": 4002,
       "length": 7,
       "value": "\"shape\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 2594,
+      "offset": 4025,
       "length": 7,
       "value": "\"slope\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 2620,
+      "offset": 4051,
       "length": 10,
       "value": "\"material\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 2969,
+      "offset": 4400,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 2985,
+      "offset": 4416,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3005,
+      "offset": 4436,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3131,
+      "offset": 4562,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3146,
+      "offset": 4577,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3163,
+      "offset": 4594,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3290,
+      "offset": 4721,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3309,
+      "offset": 4740,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3326,
+      "offset": 4757,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3342,
+      "offset": 4773,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3514,
+      "offset": 4945,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3530,
+      "offset": 4961,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3544,
+      "offset": 4975,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3558,
+      "offset": 4989,
       "length": 3,
       "value": "127"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3615,
+      "offset": 5046,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3632,
+      "offset": 5063,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3650,
+      "offset": 5081,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "BooleanLiteral",
-      "offset": 3818,
+      "offset": 5249,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 435,
       "length": 17,
       "value": "\"\/api\/user\/login\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 484,
       "length": 12,
       "value": "\"\/api\/user\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 518,
       "length": 17,
       "value": "\"\/api\/user\/reset\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 558,
       "length": 18,
       "value": "\"\/api\/user\/reset\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 599,
       "length": 20,
       "value": "\"\/api\/user\/register\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 641,
       "length": 18,
       "value": "\"\/api\/cs\/feedback\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 677,
       "length": 24,
       "value": "\"\/api\/user\/cancellation\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 725,
       "length": 14,
       "value": "\"\/api\/device\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 763,
       "length": 18,
       "value": "\"\/api\/device\/bind\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 802,
       "length": 16,
       "value": "\"\/api\/device\/ao\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 840,
       "length": 21,
       "value": "\"\/api\/device\/release\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 879,
       "length": 16,
       "value": "\"\/api\/user\/auth\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 910,
       "length": 15,
       "value": "\"\/api\/env\/pool\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 939,
       "length": 16,
       "value": "\"\/api\/env\/pool\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 976,
       "length": 14,
       "value": "\"\/uploadimage\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 1011,
       "length": 21,
       "value": "\"\/api\/cs\/uploadvideo\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 1052,
       "length": 37,
       "value": "\"\/device\/DATA\/send_transparent_data\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 1120,
       "length": 37,
       "value": "\"\/device\/OTA\/notify_ready_to_update\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 1194,
       "length": 40,
       "value": "\"\/device\/OTA\/notify_ready_update_reply\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 1265,
       "length": 35,
       "value": "\"\/device\/OTA\/post_update_progress\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 1320,
       "length": 41,
       "value": "\"\/device\/DATA\/recv_transparent_cmd_data\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 1382,
       "length": 43,
       "value": "\"\/device\/DATA\/recv_transparent_query_data\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 1448,
       "length": 32,
       "value": "\"\/device\/OTA\/recv_start_update\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "StringLiteral",
       "offset": 1504,
       "length": 8,
       "value": "\"\/will\/\""
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Const\/WYConst.swift",
       "kind": "IntegerLiteral",
       "offset": 1537,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
+      "filePath": "\/Users\/liyang\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "BooleanLiteral",
       "offset": 331,
       "length": 5,
