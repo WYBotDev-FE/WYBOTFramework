@@ -148,7 +148,7 @@ public class WYLib {
   public func setFloorPattern(_ floor: WYBOTFramework.WYPatterns) async throws -> Swift.Bool
   public func setFloorPattern(_ floor: WYBOTFramework.WYPatterns, deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
   public func pumpControl(deviceId: Swift.String, on: Swift.Bool) throws
-  public func manaulControl(deviceId: Swift.String, point: CoreFoundation.CGSize) throws
+  public func manaulControl(deviceId: Swift.String, point: CoreFoundation.CGPoint) throws
   public func areaClean(deviceId: Swift.String, token: Swift.String) throws
   public func calibratingState(deviceId: Swift.String) async throws -> Swift.Int
   public func calibrateSensor(deviceId: Swift.String, token: Swift.String) async throws -> Swift.Int
