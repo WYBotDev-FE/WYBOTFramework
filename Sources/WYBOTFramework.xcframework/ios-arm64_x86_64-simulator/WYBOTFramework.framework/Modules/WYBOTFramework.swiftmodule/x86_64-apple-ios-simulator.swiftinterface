@@ -183,6 +183,7 @@ public enum WYError : Swift.Error, Swift.Identifiable {
   case passvalidate
   case disconnectWithError
   case bleDataValidError
+  case unknownResponse
   public typealias ID = Swift.String
 }
 extension WYBOTFramework.WYError : Foundation.LocalizedError {
