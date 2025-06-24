@@ -3714,9 +3714,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "RobotBatteryData",
+                "printedName": "WYBOTFramework.RobotBatteryData",
+                "usr": "s:14WYBOTFramework16RobotBatteryDataV"
               },
               {
                 "kind": "TypeNominal",
@@ -3732,8 +3732,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14WYBOTFramework5WYLibC11batteryInfo3for4withSiSS_SStYaKF",
-            "mangledName": "$s14WYBOTFramework5WYLibC11batteryInfo3for4withSiSS_SStYaKF",
+            "usr": "s:14WYBOTFramework5WYLibC11batteryInfo3for4withAA16RobotBatteryDataVSS_SStYaKF",
+            "mangledName": "$s14WYBOTFramework5WYLibC11batteryInfo3for4withAA16RobotBatteryDataVSS_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
               "AccessControl",
@@ -3749,14 +3749,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "RobotBatteryData",
+                "printedName": "WYBOTFramework.RobotBatteryData",
+                "usr": "s:14WYBOTFramework16RobotBatteryDataV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14WYBOTFramework5WYLibC11batteryInfoSiyYaKF",
-            "mangledName": "$s14WYBOTFramework5WYLibC11batteryInfoSiyYaKF",
+            "usr": "s:14WYBOTFramework5WYLibC11batteryInfoAA16RobotBatteryDataVyYaKF",
+            "mangledName": "$s14WYBOTFramework5WYLibC11batteryInfoAA16RobotBatteryDataVyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
               "AccessControl",
@@ -17023,6 +17023,174 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "RobotBatteryData",
+        "printedName": "RobotBatteryData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "batteryLevel",
+            "printedName": "batteryLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework16RobotBatteryDataV12batteryLevels5UInt8Vvp",
+            "mangledName": "$s14WYBOTFramework16RobotBatteryDataV12batteryLevels5UInt8Vvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework16RobotBatteryDataV12batteryLevels5UInt8Vvg",
+                "mangledName": "$s14WYBOTFramework16RobotBatteryDataV12batteryLevels5UInt8Vvg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isCharging",
+            "printedName": "isCharging",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework16RobotBatteryDataV10isChargingSbvp",
+            "mangledName": "$s14WYBOTFramework16RobotBatteryDataV10isChargingSbvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework16RobotBatteryDataV10isChargingSbvg",
+                "mangledName": "$s14WYBOTFramework16RobotBatteryDataV10isChargingSbvg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RobotBatteryData",
+                "printedName": "WYBOTFramework.RobotBatteryData",
+                "usr": "s:14WYBOTFramework16RobotBatteryDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RobotBatteryData",
+                "printedName": "WYBOTFramework.RobotBatteryData",
+                "usr": "s:14WYBOTFramework16RobotBatteryDataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework16RobotBatteryDataV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14WYBOTFramework16RobotBatteryDataV2eeoiySbAC_ACtFZ",
+            "moduleName": "WYBOTFramework",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14WYBOTFramework16RobotBatteryDataV",
+        "mangledName": "$s14WYBOTFramework16RobotBatteryDataV",
+        "moduleName": "WYBOTFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WYBOTFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "WYFunctions",
         "printedName": "WYFunctions",
         "children": [
@@ -23775,35 +23943,35 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "BooleanLiteral",
-      "offset": 1939,
+      "offset": 1952,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "BooleanLiteral",
-      "offset": 1982,
+      "offset": 1995,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "Array",
-      "offset": 2017,
+      "offset": 2030,
       "length": 24,
       "value": "[\"dreame-x13b348t\"]"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 49758,
+      "offset": 49774,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 49887,
+      "offset": 49903,
       "length": 1,
       "value": "1"
     },

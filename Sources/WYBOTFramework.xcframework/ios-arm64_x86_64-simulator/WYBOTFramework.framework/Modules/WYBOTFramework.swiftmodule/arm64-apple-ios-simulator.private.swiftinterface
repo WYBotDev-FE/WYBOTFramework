@@ -106,8 +106,8 @@ public class WYLib {
   public func searchWiFi() async throws -> [WYBOTFramework.WYWifiInfo]
   public func setWiFi(_ ssid: Swift.String, password: Swift.String) async throws -> Swift.Bool
   public func update(device: WYBOTFramework.ScanDevice, for unit: WYBOTFramework.WYUnit, with firmware: Foundation.Data)
-  public func batteryInfo(for deviceId: Swift.String, with token: Swift.String) async throws -> Swift.Int
-  public func batteryInfo() async throws -> Swift.Int
+  public func batteryInfo(for deviceId: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.RobotBatteryData
+  public func batteryInfo() async throws -> WYBOTFramework.RobotBatteryData
   public func setCleanMode(_ mode: WYBOTFramework.WYCleanMode, to device: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.WYCleanMode
   public func cleanMode(deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.WYCleanMode, any Swift.Error>
   public func cleanMode() async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.WYCleanMode, any Swift.Error>
@@ -470,6 +470,11 @@ public enum WYMediaType {
   public var hashValue: Swift.Int {
     get
   }
+}
+public struct RobotBatteryData : Swift.Equatable {
+  public let batteryLevel: Swift.UInt8
+  public let isCharging: Swift.Bool
+  public static func == (a: WYBOTFramework.RobotBatteryData, b: WYBOTFramework.RobotBatteryData) -> Swift.Bool
 }
 public struct WYFunctions : Swift.Codable {
   public var model: Swift.String
