@@ -9,6 +9,7 @@ import Photos
 import Swift
 import SwiftUI
 import UIKit
+import UserNotifications
 @_exported import WYBOTFramework
 import _Concurrency
 import _StringProcessing
@@ -19,49 +20,352 @@ extension CoreBluetooth.CBPeripheral {
     set
   }
 }
-public struct Device : Swift.Codable, Swift.Equatable, Swift.Identifiable {
-  public static func == (lhs: WYBOTFramework.Device, rhs: WYBOTFramework.Device) -> Swift.Bool
-  public var id: Swift.String
-  public let deviceId: Swift.String
-  public var deviceName: Swift.String
-  public let deviceType: Swift.String
-  public let bleName: Swift.String
-  public var version: WYBOTFramework.Version?
-  public var bleState: Swift.Bool
-  public var wifiState: Swift.Bool
-  public var hasUpdate: Swift.Bool
-  public var poolId: Swift.Int?
-  public var autoUpdate: Swift.Bool?
-  public init(deviceId: Swift.String, deviceName: Swift.String, deviceType: Swift.String, bleName: Swift.String, version: WYBOTFramework.Version? = nil, bleState: Swift.Bool = false)
-  public init(from decoder: any Swift.Decoder) throws
+public struct WYGroup : WYBOTFramework.CodableDefaultValue, Swift.Identifiable, Swift.Equatable {
+  @WYBOTFramework.CodableDefault public var id: Swift.String {
+    get
+  }
+  @WYBOTFramework.CodableDefault public var name: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var device: WYBOTFramework.Device {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var docker: WYBOTFramework.Docker {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var vision: WYBOTFramework.Vision {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var poolId: Swift.Int {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var autoUpdate: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var mqttSubscriberID: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var mqttSubscriberTopic: Swift.String? {
+    get
+    set
+    _modify
+  }
+  public init(id: Swift.String, name: Swift.String, autoUpdate: Swift.Bool, device: WYBOTFramework.Device, docker: WYBOTFramework.Docker, vision: WYBOTFramework.Vision)
+  public static func == (a: WYBOTFramework.WYGroup, b: WYBOTFramework.WYGroup) -> Swift.Bool
   public typealias ID = Swift.String
   public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-public struct Version : Swift.Codable {
-  public let Firmware: Swift.String?
+public struct Vision : WYBOTFramework.CodableDefaultValue, Swift.Equatable {
+  public var id: Swift.String {
+    get
+  }
+  @WYBOTFramework.CodableDefault public var visionId: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var privacy: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var video: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var pictrue: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var log: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var policy: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var hasUpdate: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var version: [WYBOTFramework.BoardVersion] {
+    get
+    set
+    _modify
+  }
+  public init(visionId: Swift.String, privacy: Swift.Bool, video: Swift.String = "", pictrue: Swift.String? = nil, log: Swift.String? = nil, policy: Swift.Bool)
+  public static func == (a: WYBOTFramework.Vision, b: WYBOTFramework.Vision) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct DeviceVersion {
-  public let type: Swift.String
-  public let hardVer: Swift.String
-  public let solfVer: Swift.String
-  public init(type: Swift.String, hardVer: Swift.String, solfVer: Swift.String)
-}
-public struct FirmwareInfo : Swift.Codable, Swift.Equatable, Swift.Identifiable {
-  public var id: Foundation.UUID
-  public let BoardID: Swift.String
-  public let SoftwareVer: Swift.String
-  public let Release: Swift.String
-  public let Url: Swift.String
+public struct Docker : WYBOTFramework.CodableDefaultValue, Swift.Identifiable, Swift.Equatable {
+  public static let names: [Swift.String]
+  public var id: Swift.String {
+    get
+  }
+  @WYBOTFramework.CodableDefault public var dockerId: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var dockerType: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var bleName: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var deviceStatus: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var dockerStatus: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var schedule: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var groupId: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var version: [WYBOTFramework.BoardVersion] {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var bleState: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var wifiState: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var hasUpdate: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  public init(dockerId: Swift.String, dockerType: Swift.String, bleName: Swift.String, deviceStatus: Swift.String, dockerStatus: Swift.String, schedule: Swift.String? = nil, groupId: Swift.String? = nil)
+  public init(device: WYBOTFramework.Device)
+  public static func == (a: WYBOTFramework.Docker, b: WYBOTFramework.Docker) -> Swift.Bool
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+public struct Device : WYBOTFramework.CodableDefaultValue, Swift.Identifiable, Swift.Equatable {
+  public var id: Swift.String {
+    get
+  }
+  @WYBOTFramework.CodableDefault public var deviceId: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var deviceName: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var deviceType: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var bleName: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var poolId: Swift.Int {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var autoUpdate: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var version: [WYBOTFramework.BoardVersion] {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var groupId: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var visionID: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var deviceVersion: WYBOTFramework.DeviceVersion? {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var bleState: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var wifiState: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var hasUpdate: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  public init(deviceId: Swift.String, deviceName: Swift.String, deviceType: Swift.String, bleName: Swift.String, bleState: Swift.Bool = false, groupId: Swift.String? = nil, visionID: Swift.String? = nil)
+  public init(docker: WYBOTFramework.Docker)
+  public static func == (a: WYBOTFramework.Device, b: WYBOTFramework.Device) -> Swift.Bool
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BoardVersion : WYBOTFramework.CodableDefaultValue, Swift.Equatable {
+  @WYBOTFramework.CodableDefault public var borad: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var hardware: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var software: Swift.String {
+    get
+    set
+    _modify
+  }
+  public var boardType: WYBOTFramework.WYBoardType {
+    get
+  }
+  public static func == (a: WYBOTFramework.BoardVersion, b: WYBOTFramework.BoardVersion) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DeviceVersion : WYBOTFramework.CodableDefaultValue, Swift.Equatable {
+  @WYBOTFramework.CodableDefault public var boardType: WYBOTFramework.WYBoardType {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var hardVer: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var solfVer: Swift.String {
+    get
+    set
+    _modify
+  }
+  public init(boardType: WYBOTFramework.WYBoardType, hardVer: Swift.String, solfVer: Swift.String)
+  public static func == (a: WYBOTFramework.DeviceVersion, b: WYBOTFramework.DeviceVersion) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FirmwareInfo : WYBOTFramework.CodableDefaultValue, Swift.Equatable, Swift.Identifiable {
+  public var id: Foundation.UUID
+  @WYBOTFramework.CodableDefault public var BoardID: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var Hardware: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var SoftwareVer: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var Release: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var Url: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var Md5: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var Manual: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var Enforce: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  public var boardType: WYBOTFramework.WYBoardType {
+    get
+  }
+  public init(BoardID: Swift.String, Hardware: Swift.String, SoftwareVer: Swift.String, Release: Swift.String, Url: Swift.String, Md5: Swift.String, Manual: Swift.Bool, Enforce: Swift.Bool)
   public static func == (a: WYBOTFramework.FirmwareInfo, b: WYBOTFramework.FirmwareInfo) -> Swift.Bool
   public typealias ID = Foundation.UUID
   public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct UpdatingProgress : Swift.Codable {
   public var boardID: Swift.String
   public var progress: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UpdatingErrorInfo : Swift.Codable {
+  public var boardID: Swift.String
+  public var errCode: Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -165,7 +469,7 @@ public struct User : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum WYError : Swift.Error, Swift.Identifiable {
+public enum WYError : Swift.Error, Swift.Identifiable, Swift.Equatable {
   public var id: Swift.String {
     get
   }
@@ -183,7 +487,13 @@ public enum WYError : Swift.Error, Swift.Identifiable {
   case passvalidate
   case disconnectWithError
   case bleDataValidError
+  case downLoadError(Swift.String)
+  case bleUpgradeError(Swift.String)
   case unknownResponse
+  case tokenInvalid
+  case timeout
+  case defaultError
+  public static func == (a: WYBOTFramework.WYError, b: WYBOTFramework.WYError) -> Swift.Bool
   public typealias ID = Swift.String
 }
 extension WYBOTFramework.WYError : Foundation.LocalizedError {
@@ -409,6 +719,70 @@ public struct WYWifiInfo : Swift.Identifiable, Swift.Equatable {
   public static func == (a: WYBOTFramework.WYWifiInfo, b: WYBOTFramework.WYWifiInfo) -> Swift.Bool
   public typealias ID = Foundation.UUID
 }
+public typealias DataList<T> = WYBOTFramework.ResponseData<WYBOTFramework.ResponseList<T>> where T : Swift.Decodable, T : Swift.Encodable, T : Swift.Sendable, T : WYBOTFramework.DefaultValue
+public typealias DataObj<T> = WYBOTFramework.ResponseData<T> where T : Swift.Decodable, T : Swift.Encodable, T : Swift.Sendable, T : WYBOTFramework.DefaultValue
+public typealias DataEmpty = WYBOTFramework.ResponseData<WYBOTFramework.ResponseEmpty>
+public struct ResponseData<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable, T : Swift.Sendable, T : WYBOTFramework.DefaultValue {
+  public init(code: Swift.Int, message: Swift.String)
+  @WYBOTFramework.CodableDefault public var code: Swift.Int {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var message: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var reason: Swift.String {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var metadata: T {
+    get
+    set
+    _modify
+  }
+  public var isSuccess: Swift.Bool {
+    get
+  }
+  public var err: WYBOTFramework.WYError {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ResponseList<T> : WYBOTFramework.CodableDefaultValue, Swift.CustomStringConvertible where T : Swift.Decodable, T : Swift.Encodable, T : Swift.Sendable, T : WYBOTFramework.DefaultValue {
+  public init()
+  @WYBOTFramework.CodableDefault public var notifications: [T] {
+    get
+    set
+    _modify
+  }
+  public var list: [T] {
+    get
+  }
+  @WYBOTFramework.CodableDefault public var page: Swift.Int {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault public var total: Swift.Int {
+    get
+    set
+    _modify
+  }
+  public var description: Swift.String {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ResponseEmpty : WYBOTFramework.CodableDefaultValue {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct ScanDevice : Swift.Equatable, Swift.Identifiable {
   public let id: Foundation.UUID
   public var model: Swift.String
@@ -419,6 +793,51 @@ public struct ScanDevice : Swift.Equatable, Swift.Identifiable {
   public init(peripheral: CoreBluetooth.CBPeripheral, rssi: Swift.Int, name: Swift.String, model: Swift.String)
   public static func == (a: WYBOTFramework.ScanDevice, b: WYBOTFramework.ScanDevice) -> Swift.Bool
   public typealias ID = Foundation.UUID
+}
+public protocol DefaultValue {
+  static var defaultValue: Self { get }
+}
+extension WYBOTFramework.DefaultValue where Self : Swift.Decodable, Self : Swift.Encodable {
+  public static var defaultValue: Self {
+    get
+  }
+}
+extension Swift.Optional : WYBOTFramework.DefaultValue {
+  public static var defaultValue: Swift.Optional<Wrapped> {
+    get
+  }
+}
+extension Swift.String : WYBOTFramework.DefaultValue {
+  public static let defaultValue: Swift.String
+}
+extension Swift.Int : WYBOTFramework.DefaultValue {
+  public static let defaultValue: Swift.Int
+}
+extension Swift.UInt32 : WYBOTFramework.DefaultValue {
+  public static let defaultValue: Swift.UInt32
+}
+extension Swift.Double : WYBOTFramework.DefaultValue {
+  public static let defaultValue: Swift.Double
+}
+extension Swift.Bool : WYBOTFramework.DefaultValue {
+  public static let defaultValue: Swift.Bool
+}
+extension Swift.Array : WYBOTFramework.DefaultValue where Element : WYBOTFramework.DefaultValue {
+  public static var defaultValue: Swift.Array<Element> {
+    get
+  }
+}
+public typealias CodableDefaultValue = WYBOTFramework.DefaultValue & Swift.Codable & Swift.Sendable
+@propertyWrapper public struct CodableDefault<T> : Swift.Sendable where T : Swift.Decodable, T : Swift.Encodable, T : Swift.Sendable, T : WYBOTFramework.DefaultValue {
+  public var wrappedValue: T
+  public init(wrappedValue: T)
+}
+extension WYBOTFramework.CodableDefault : Swift.Equatable where T : Swift.Equatable {
+  public static func == (a: WYBOTFramework.CodableDefault<T>, b: WYBOTFramework.CodableDefault<T>) -> Swift.Bool
+}
+extension WYBOTFramework.CodableDefault : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum HTTPMethod : Swift.String {
   case GET
@@ -615,6 +1034,69 @@ public enum AuthType {
     get
   }
 }
+public enum WYBoardType : Swift.UInt8, WYBOTFramework.CodableDefaultValue, Swift.Equatable {
+  case power
+  case robot
+  case led
+  case sonar_robot
+  case sonar_station
+  case sonar_front
+  case sonar_side
+  case solar_panel
+  case control_board
+  case vision
+  case iot
+  case unknown
+  public static let defaultValue: WYBOTFramework.WYBoardType
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public struct WYBoardInfo : Swift.Equatable, Swift.Sendable {
+  public let boardType: WYBOTFramework.WYBoardType
+  public var deviceType: Swift.String {
+    get
+  }
+  public var deviceName: Swift.String {
+    get
+  }
+  public let innerType: Swift.String
+  public let innerName: Swift.String
+  public let softwareVersion: Swift.String
+  public let hardwareVersion: Swift.String
+  public let chipID: Swift.String
+  public var mac: Swift.String {
+    get
+  }
+  public init(boardType: WYBOTFramework.WYBoardType, deviceType: Swift.String, deviceName: Swift.String, innerType: Swift.String, innerName: Swift.String, softwareVersion: Swift.String, hardwareVersion: Swift.String, chipID: Swift.String, mac: Swift.String)
+  public static func == (a: WYBOTFramework.WYBoardInfo, b: WYBOTFramework.WYBoardInfo) -> Swift.Bool
+}
+extension WYBOTFramework.WYBoardType {
+  public var typeString: Swift.String {
+    get
+  }
+  public init(type: Swift.String)
+}
+extension WYBOTFramework.WYBoardType {
+  public static var dockTypes: [WYBOTFramework.WYBoardType] {
+    get
+  }
+  public static var robotTypes: [WYBOTFramework.WYBoardType] {
+    get
+  }
+}
+public struct WYNotificationName {
+  public static let userTokenExpired: Foundation.Notification.Name
+}
+public func wyPrint<T>(_ content: T, identifier: Swift.String = "", file: Swift.String = #file, method: Swift.String = #function, line: Swift.Int = #line)
+public func wyPrintBlue<T>(_ content: T, identifier: Swift.String = "", file: Swift.String = #file, method: Swift.String = #function, line: Swift.Int = #line)
+public func wyPrintJSON(_ content: Foundation.Data, identifier: Swift.String = "", file: Swift.String = #file, method: Swift.String = #function, line: Swift.Int = #line)
+public func wyPrintWithLine(_ content: Swift.String, identifier: Swift.String = "", file: Swift.String = #file, method: Swift.String = #function, line: Swift.Int = #line)
+extension Swift.Array {
+  public func format() -> Swift.String
+}
 extension WYBOTFramework.LightMQTT.MQTTMessageParserState : Swift.Equatable {}
 extension WYBOTFramework.LightMQTT.MQTTMessageParserState : Swift.Hashable {}
 extension WYBOTFramework.WYStatus : Swift.Equatable {}
@@ -660,3 +1142,5 @@ extension WYBOTFramework.WYCombos : Swift.Equatable {}
 extension WYBOTFramework.WYCombos : Swift.Hashable {}
 extension WYBOTFramework.AuthType : Swift.Equatable {}
 extension WYBOTFramework.AuthType : Swift.Hashable {}
+extension WYBOTFramework.WYBoardType : Swift.Hashable {}
+extension WYBOTFramework.WYBoardType : Swift.RawRepresentable {}
