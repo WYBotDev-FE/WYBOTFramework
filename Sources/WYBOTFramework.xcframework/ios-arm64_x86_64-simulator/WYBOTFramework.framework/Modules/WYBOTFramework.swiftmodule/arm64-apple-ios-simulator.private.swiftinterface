@@ -457,7 +457,14 @@ public class WYLib {
   public func calibratingState(deviceId: Swift.String) async throws -> Swift.Int
   public func calibrateSensor(deviceId: Swift.String, token: Swift.String) async throws -> Swift.Int
   public func updateFirmware(deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<Swift.Int, any Swift.Error>
+  public func setBoatAutoCleaning(isOn: Swift.Bool, deviceId: Swift.String) async throws -> Swift.Bool
+  public func checkBoatAutoCleaning(for deviceId: Swift.String) async throws -> Swift.Bool
+  public func fetchBoatStreamStatus(_ deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.BleStreamData, any Swift.Error>
   @objc deinit
+}
+extension Swift.UInt64 {
+  public static func seconds(_ seconds: Swift.UInt64) -> Swift.UInt64
+  public static func milliseconds(_ milliseconds: Swift.UInt64) -> Swift.UInt64
 }
 public struct User : Swift.Codable, Swift.Equatable {
   public let userId: Swift.String
@@ -573,7 +580,7 @@ public struct WYDataPoint : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum WYStatus : Swift.Int {
+public enum WYStatus : Swift.Int, Swift.Sendable {
   case manaul
   case stop
   case start
@@ -710,6 +717,18 @@ public struct WYWeekPlan : Swift.Identifiable, Swift.Equatable {
   public func weekDayTitle() -> Swift.String
   public static func == (a: WYBOTFramework.WYWeekPlan, b: WYBOTFramework.WYWeekPlan) -> Swift.Bool
   public typealias ID = Foundation.UUID
+}
+public enum BleStreamData : Swift.Sendable {
+  case cleanStatus(WYBOTFramework.WYStatus)
+  case robotBattery(WYBOTFramework.RobotBatteryData)
+}
+extension Swift.Optional where Wrapped == Swift.Bool {
+  public var isTrue: Swift.Bool {
+    get
+  }
+  public var isFalse: Swift.Bool {
+    get
+  }
 }
 public struct WYWifiInfo : Swift.Identifiable, Swift.Equatable {
   public var ssid: Swift.String
@@ -890,9 +909,21 @@ public enum WYMediaType {
     get
   }
 }
-public struct RobotBatteryData : Swift.Equatable {
-  public let batteryLevel: Swift.UInt8
+public enum BatteryEnergySource : Swift.Sendable {
+  case solar
+  case acAdapter
+  case unknown
+  public static func == (a: WYBOTFramework.BatteryEnergySource, b: WYBOTFramework.BatteryEnergySource) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct RobotBatteryData : Swift.Sendable, Swift.Equatable {
   public let isCharging: Swift.Bool
+  public let batteryLevel: Swift.Int
+  public let source: WYBOTFramework.BatteryEnergySource
+  public init(isCharging: Swift.Bool, batteryLevel: Swift.Int, source: Swift.Int8)
   public static func == (a: WYBOTFramework.RobotBatteryData, b: WYBOTFramework.RobotBatteryData) -> Swift.Bool
 }
 public struct WYFunctions : Swift.Codable {
@@ -1128,6 +1159,8 @@ extension WYBOTFramework.HTTPMethod : Swift.Hashable {}
 extension WYBOTFramework.HTTPMethod : Swift.RawRepresentable {}
 extension WYBOTFramework.WYMediaType : Swift.Equatable {}
 extension WYBOTFramework.WYMediaType : Swift.Hashable {}
+extension WYBOTFramework.BatteryEnergySource : Swift.Equatable {}
+extension WYBOTFramework.BatteryEnergySource : Swift.Hashable {}
 extension WYBOTFramework.WYType : Swift.Equatable {}
 extension WYBOTFramework.WYType : Swift.Hashable {}
 extension WYBOTFramework.WYControls : Swift.Equatable {}

@@ -10452,6 +10452,110 @@
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBoatAutoCleaning",
+            "printedName": "setBoatAutoCleaning(isOn:deviceId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework5WYLibC19setBoatAutoCleaning4isOn8deviceIdS2b_SStYaKF",
+            "mangledName": "$s14WYBOTFramework5WYLibC19setBoatAutoCleaning4isOn8deviceIdS2b_SStYaKF",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkBoatAutoCleaning",
+            "printedName": "checkBoatAutoCleaning(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework5WYLibC21checkBoatAutoCleaning3forSbSS_tYaKF",
+            "mangledName": "$s14WYBOTFramework5WYLibC21checkBoatAutoCleaning3forSbSS_tYaKF",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchBoatStreamStatus",
+            "printedName": "fetchBoatStreamStatus(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<WYBOTFramework.BleStreamData, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BleStreamData",
+                    "printedName": "WYBOTFramework.BleStreamData",
+                    "usr": "s:14WYBOTFramework13BleStreamDataO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Scs"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework5WYLibC21fetchBoatStreamStatusyScsyAA03BleE4DataOs5Error_pGSSYaKF",
+            "mangledName": "$s14WYBOTFramework5WYLibC21fetchBoatStreamStatusyScsyAA03BleE4DataOs5Error_pGSSYaKF",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -15600,6 +15704,13 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -19550,6 +19661,166 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WYBOTFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "WYBOTFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BleStreamData",
+        "printedName": "BleStreamData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cleanStatus",
+            "printedName": "cleanStatus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.BleStreamData.Type) -> (WYBOTFramework.WYStatus) -> WYBOTFramework.BleStreamData",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WYBOTFramework.WYStatus) -> WYBOTFramework.BleStreamData",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BleStreamData",
+                        "printedName": "WYBOTFramework.BleStreamData",
+                        "usr": "s:14WYBOTFramework13BleStreamDataO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WYStatus",
+                        "printedName": "WYBOTFramework.WYStatus",
+                        "usr": "s:14WYBOTFramework8WYStatusO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.BleStreamData.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BleStreamData",
+                        "printedName": "WYBOTFramework.BleStreamData",
+                        "usr": "s:14WYBOTFramework13BleStreamDataO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework13BleStreamDataO11cleanStatusyAcA8WYStatusOcACmF",
+            "mangledName": "$s14WYBOTFramework13BleStreamDataO11cleanStatusyAcA8WYStatusOcACmF",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "robotBattery",
+            "printedName": "robotBattery",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.BleStreamData.Type) -> (WYBOTFramework.RobotBatteryData) -> WYBOTFramework.BleStreamData",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WYBOTFramework.RobotBatteryData) -> WYBOTFramework.BleStreamData",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BleStreamData",
+                        "printedName": "WYBOTFramework.BleStreamData",
+                        "usr": "s:14WYBOTFramework13BleStreamDataO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RobotBatteryData",
+                        "printedName": "WYBOTFramework.RobotBatteryData",
+                        "usr": "s:14WYBOTFramework16RobotBatteryDataV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.BleStreamData.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BleStreamData",
+                        "printedName": "WYBOTFramework.BleStreamData",
+                        "usr": "s:14WYBOTFramework13BleStreamDataO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework13BleStreamDataO12robotBatteryyAcA05RobotfD0VcACmF",
+            "mangledName": "$s14WYBOTFramework13BleStreamDataO12robotBatteryyAcA05RobotfD0VcACmF",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14WYBOTFramework13BleStreamDataO",
+        "mangledName": "$s14WYBOTFramework13BleStreamDataO",
+        "moduleName": "WYBOTFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -24146,32 +24417,169 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "RobotBatteryData",
-        "printedName": "RobotBatteryData",
+        "name": "BatteryEnergySource",
+        "printedName": "BatteryEnergySource",
         "children": [
           {
             "kind": "Var",
-            "name": "batteryLevel",
-            "printedName": "batteryLevel",
+            "name": "solar",
+            "printedName": "solar",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.BatteryEnergySource.Type) -> WYBOTFramework.BatteryEnergySource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BatteryEnergySource",
+                    "printedName": "WYBOTFramework.BatteryEnergySource",
+                    "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.BatteryEnergySource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BatteryEnergySource",
+                        "printedName": "WYBOTFramework.BatteryEnergySource",
+                        "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework19BatteryEnergySourceO5solaryA2CmF",
+            "mangledName": "$s14WYBOTFramework19BatteryEnergySourceO5solaryA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "acAdapter",
+            "printedName": "acAdapter",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.BatteryEnergySource.Type) -> WYBOTFramework.BatteryEnergySource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BatteryEnergySource",
+                    "printedName": "WYBOTFramework.BatteryEnergySource",
+                    "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.BatteryEnergySource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BatteryEnergySource",
+                        "printedName": "WYBOTFramework.BatteryEnergySource",
+                        "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework19BatteryEnergySourceO9acAdapteryA2CmF",
+            "mangledName": "$s14WYBOTFramework19BatteryEnergySourceO9acAdapteryA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.BatteryEnergySource.Type) -> WYBOTFramework.BatteryEnergySource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BatteryEnergySource",
+                    "printedName": "WYBOTFramework.BatteryEnergySource",
+                    "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.BatteryEnergySource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BatteryEnergySource",
+                        "printedName": "WYBOTFramework.BatteryEnergySource",
+                        "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework19BatteryEnergySourceO7unknownyA2CmF",
+            "mangledName": "$s14WYBOTFramework19BatteryEnergySourceO7unknownyA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UInt8",
-                "printedName": "Swift.UInt8",
-                "usr": "s:s5UInt8V"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BatteryEnergySource",
+                "printedName": "WYBOTFramework.BatteryEnergySource",
+                "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BatteryEnergySource",
+                "printedName": "WYBOTFramework.BatteryEnergySource",
+                "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework19BatteryEnergySourceO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14WYBOTFramework19BatteryEnergySourceO2eeoiySbAC_ACtFZ",
+            "moduleName": "WYBOTFramework",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14WYBOTFramework16RobotBatteryDataV12batteryLevels5UInt8Vvp",
-            "mangledName": "$s14WYBOTFramework16RobotBatteryDataV12batteryLevels5UInt8Vvp",
+            "usr": "s:14WYBOTFramework19BatteryEnergySourceO9hashValueSivp",
+            "mangledName": "$s14WYBOTFramework19BatteryEnergySourceO9hashValueSivp",
             "moduleName": "WYBOTFramework",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
+            "implicit": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -24180,20 +24588,96 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UInt8",
-                    "printedName": "Swift.UInt8",
-                    "usr": "s:s5UInt8V"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework16RobotBatteryDataV12batteryLevels5UInt8Vvg",
-                "mangledName": "$s14WYBOTFramework16RobotBatteryDataV12batteryLevels5UInt8Vvg",
+                "usr": "s:14WYBOTFramework19BatteryEnergySourceO9hashValueSivg",
+                "mangledName": "$s14WYBOTFramework19BatteryEnergySourceO9hashValueSivg",
                 "moduleName": "WYBOTFramework",
                 "implicit": true,
                 "accessorKind": "get"
               }
             ]
           },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework19BatteryEnergySourceO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14WYBOTFramework19BatteryEnergySourceO4hash4intoys6HasherVz_tF",
+            "moduleName": "WYBOTFramework",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14WYBOTFramework19BatteryEnergySourceO",
+        "mangledName": "$s14WYBOTFramework19BatteryEnergySourceO",
+        "moduleName": "WYBOTFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RobotBatteryData",
+        "printedName": "RobotBatteryData",
+        "children": [
           {
             "kind": "Var",
             "name": "isCharging",
@@ -24239,6 +24723,133 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "batteryLevel",
+            "printedName": "batteryLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework16RobotBatteryDataV12batteryLevelSivp",
+            "mangledName": "$s14WYBOTFramework16RobotBatteryDataV12batteryLevelSivp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework16RobotBatteryDataV12batteryLevelSivg",
+                "mangledName": "$s14WYBOTFramework16RobotBatteryDataV12batteryLevelSivg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "source",
+            "printedName": "source",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BatteryEnergySource",
+                "printedName": "WYBOTFramework.BatteryEnergySource",
+                "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework16RobotBatteryDataV6sourceAA0C12EnergySourceOvp",
+            "mangledName": "$s14WYBOTFramework16RobotBatteryDataV6sourceAA0C12EnergySourceOvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BatteryEnergySource",
+                    "printedName": "WYBOTFramework.BatteryEnergySource",
+                    "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework16RobotBatteryDataV6sourceAA0C12EnergySourceOvg",
+                "mangledName": "$s14WYBOTFramework16RobotBatteryDataV6sourceAA0C12EnergySourceOvg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isCharging:batteryLevel:source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RobotBatteryData",
+                "printedName": "WYBOTFramework.RobotBatteryData",
+                "usr": "s:14WYBOTFramework16RobotBatteryDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14WYBOTFramework16RobotBatteryDataV10isCharging12batteryLevel6sourceACSb_Sis4Int8Vtcfc",
+            "mangledName": "$s14WYBOTFramework16RobotBatteryDataV10isCharging12batteryLevel6sourceACSb_Sis4Int8Vtcfc",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -24276,7 +24887,8 @@
         "mangledName": "$s14WYBOTFramework16RobotBatteryDataV",
         "moduleName": "WYBOTFramework",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -24292,6 +24904,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -31369,6 +31988,469 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UInt64",
+        "printedName": "UInt64",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "seconds",
+            "printedName": "seconds(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s6UInt64V14WYBOTFrameworkE7secondsyA2BFZ",
+            "mangledName": "$ss6UInt64V14WYBOTFrameworkE7secondsyA2BFZ",
+            "moduleName": "WYBOTFramework",
+            "static": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "milliseconds",
+            "printedName": "milliseconds(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s6UInt64V14WYBOTFrameworkE12millisecondsyA2BFZ",
+            "mangledName": "$ss6UInt64V14WYBOTFrameworkE12millisecondsyA2BFZ",
+            "moduleName": "WYBOTFramework",
+            "static": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:s6UInt64V",
+        "mangledName": "$ss6UInt64V",
+        "moduleName": "Swift",
+        "declAttributes": [
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "FixedWidthInteger",
+            "printedName": "FixedWidthInteger",
+            "usr": "s:s17FixedWidthIntegerP",
+            "mangledName": "$ss17FixedWidthIntegerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UnsignedInteger",
+            "printedName": "UnsignedInteger",
+            "usr": "s:SU",
+            "mangledName": "$sSU"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinIntegerLiteral",
+            "printedName": "_ExpressibleByBuiltinIntegerLiteral",
+            "usr": "s:s35_ExpressibleByBuiltinIntegerLiteralP",
+            "mangledName": "$ss35_ExpressibleByBuiltinIntegerLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BinaryInteger",
+            "printedName": "BinaryInteger",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Words",
+                "printedName": "Words",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Words",
+                    "printedName": "Swift.UInt64.Words",
+                    "usr": "s:s6UInt64V5WordsV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sz",
+            "mangledName": "$sSz"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LosslessStringConvertible",
+            "printedName": "LosslessStringConvertible",
+            "usr": "s:s25LosslessStringConvertibleP",
+            "mangledName": "$ss25LosslessStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Numeric",
+            "printedName": "Numeric",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Magnitude",
+                "printedName": "Magnitude",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt64",
+                    "printedName": "Swift.UInt64",
+                    "usr": "s:s6UInt64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sj",
+            "mangledName": "$sSj"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Strideable",
+            "printedName": "Strideable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Stride",
+                "printedName": "Stride",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sx",
+            "mangledName": "$sSx"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AdditiveArithmetic",
+            "printedName": "AdditiveArithmetic",
+            "usr": "s:s18AdditiveArithmeticP",
+            "mangledName": "$ss18AdditiveArithmeticP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByIntegerLiteral",
+            "printedName": "ExpressibleByIntegerLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "IntegerLiteralType",
+                "printedName": "IntegerLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt64",
+                    "printedName": "Swift.UInt64",
+                    "usr": "s:s6UInt64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s27ExpressibleByIntegerLiteralP",
+            "mangledName": "$ss27ExpressibleByIntegerLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CVarArgAligned",
+            "printedName": "_CVarArgAligned",
+            "usr": "s:s15_CVarArgAlignedP",
+            "mangledName": "$ss15_CVarArgAlignedP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SIMDScalar",
+            "printedName": "SIMDScalar",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SIMDMaskScalar",
+                "printedName": "SIMDMaskScalar",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SIMD2Storage",
+                "printedName": "SIMD2Storage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD2Storage",
+                    "printedName": "Swift.UInt64.SIMD2Storage",
+                    "usr": "s:s6UInt64V12SIMD2StorageV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SIMD4Storage",
+                "printedName": "SIMD4Storage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD4Storage",
+                    "printedName": "Swift.UInt64.SIMD4Storage",
+                    "usr": "s:s6UInt64V12SIMD4StorageV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SIMD8Storage",
+                "printedName": "SIMD8Storage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD8Storage",
+                    "printedName": "Swift.UInt64.SIMD8Storage",
+                    "usr": "s:s6UInt64V12SIMD8StorageV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SIMD16Storage",
+                "printedName": "SIMD16Storage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD16Storage",
+                    "printedName": "Swift.UInt64.SIMD16Storage",
+                    "usr": "s:s6UInt64V13SIMD16StorageV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SIMD32Storage",
+                "printedName": "SIMD32Storage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD32Storage",
+                    "printedName": "Swift.UInt64.SIMD32Storage",
+                    "usr": "s:s6UInt64V13SIMD32StorageV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SIMD64Storage",
+                "printedName": "SIMD64Storage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD64Storage",
+                    "printedName": "Swift.UInt64.SIMD64Storage",
+                    "usr": "s:s6UInt64V13SIMD64StorageV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s10SIMDScalarP",
+            "mangledName": "$ss10SIMDScalarP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt64",
+                    "printedName": "Swift.UInt64",
+                    "usr": "s:s6UInt64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation18_FormatSpecifiableP",
+            "mangledName": "$s10Foundation18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt64",
+                    "printedName": "Swift.UInt64",
+                    "usr": "s:s6UInt64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Array",
         "printedName": "Array",
         "children": [
@@ -32884,6 +33966,563 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Optional",
+        "printedName": "Optional",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isTrue",
+            "printedName": "isTrue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:Sq14WYBOTFrameworkSbRszlE6isTrueSbvp",
+            "mangledName": "$sSq14WYBOTFrameworkSbRszlE6isTrueSbvp",
+            "moduleName": "WYBOTFramework",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:Sq14WYBOTFrameworkSbRszlE6isTrueSbvg",
+                "mangledName": "$sSq14WYBOTFrameworkSbRszlE6isTrueSbvg",
+                "moduleName": "WYBOTFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 == Swift.Bool>",
+                "sugared_genericSig": "<Wrapped where Wrapped == Swift.Bool>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isFalse",
+            "printedName": "isFalse",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:Sq14WYBOTFrameworkSbRszlE7isFalseSbvp",
+            "mangledName": "$sSq14WYBOTFrameworkSbRszlE7isFalseSbvp",
+            "moduleName": "WYBOTFramework",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:Sq14WYBOTFrameworkSbRszlE7isFalseSbvg",
+                "mangledName": "$sSq14WYBOTFrameworkSbRszlE7isFalseSbvg",
+                "moduleName": "WYBOTFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 == Swift.Bool>",
+                "sugared_genericSig": "<Wrapped where Wrapped == Swift.Bool>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultValue",
+            "printedName": "defaultValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:Sq14WYBOTFrameworkE12defaultValuexSgvpZ",
+            "mangledName": "$sSq14WYBOTFrameworkE12defaultValuexSgvpZ",
+            "moduleName": "WYBOTFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:Sq14WYBOTFrameworkE12defaultValuexSgvgZ",
+                "mangledName": "$sSq14WYBOTFrameworkE12defaultValuexSgvgZ",
+                "moduleName": "WYBOTFramework",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Wrapped>",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:Sq",
+        "mangledName": "$sSq",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0 where τ_0_0 : ~Copyable>",
+        "sugared_genericSig": "<Wrapped where Wrapped : ~Copyable>",
+        "declAttributes": [
+          "Frozen"
+        ],
+        "isExternal": true,
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DefaultValue",
+            "printedName": "DefaultValue",
+            "usr": "s:14WYBOTFramework12DefaultValueP",
+            "mangledName": "$s14WYBOTFramework12DefaultValueP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByNilLiteral",
+            "printedName": "ExpressibleByNilLiteral",
+            "usr": "s:s23ExpressibleByNilLiteralP",
+            "mangledName": "$ss23ExpressibleByNilLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "AnyObject"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EncodableWithConfiguration",
+            "printedName": "EncodableWithConfiguration",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "EncodingConfiguration",
+                "printedName": "EncodingConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.EncodingConfiguration"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation26EncodableWithConfigurationP",
+            "mangledName": "$s10Foundation26EncodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DecodableWithConfiguration",
+            "printedName": "DecodableWithConfiguration",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "DecodingConfiguration",
+                "printedName": "DecodingConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.DecodingConfiguration"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation26DecodableWithConfigurationP",
+            "mangledName": "$s10Foundation26DecodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Gesture",
+            "printedName": "Gesture",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Value",
+                "printedName": "Value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Value"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI7GestureP",
+            "mangledName": "$s7SwiftUI7GestureP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TableColumnContent",
+            "printedName": "TableColumnContent",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "TableRowValue",
+                "printedName": "TableRowValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.TableRowValue"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "TableColumnSortComparator",
+                "printedName": "TableColumnSortComparator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.TableColumnSortComparator"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "TableColumnBody",
+                "printedName": "TableColumnBody",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18TableColumnContentP",
+            "mangledName": "$s7SwiftUI18TableColumnContentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TabContent",
+            "printedName": "TabContent",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "TabValue",
+                "printedName": "TabValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.TabValue"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "_IdentifiedView",
+                "printedName": "_IdentifiedView",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0._IdentifiedView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0._IdentifiedView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI10TabContentP",
+            "mangledName": "$s7SwiftUI10TabContentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TableRowContent",
+            "printedName": "TableRowContent",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "TableRowValue",
+                "printedName": "TableRowValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.TableRowValue"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "TableRowBody",
+                "printedName": "TableRowBody",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI15TableRowContentP",
+            "mangledName": "$s7SwiftUI15TableRowContentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Commands",
+            "printedName": "Commands",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI8CommandsP",
+            "mangledName": "$s7SwiftUI8CommandsP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ToolbarContent",
+            "printedName": "ToolbarContent",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI14ToolbarContentP",
+            "mangledName": "$s7SwiftUI14ToolbarContentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomizableToolbarContent",
+            "printedName": "CustomizableToolbarContent",
+            "usr": "s:7SwiftUI26CustomizableToolbarContentP",
+            "mangledName": "$s7SwiftUI26CustomizableToolbarContentP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "String",
         "printedName": "String",
         "children": [
@@ -33515,481 +35154,6 @@
             ],
             "usr": "s:16CoreTransferable0B0P",
             "mangledName": "$s16CoreTransferable0B0P"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Optional",
-        "printedName": "Optional",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "defaultValue",
-            "printedName": "defaultValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "τ_0_0?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:Sq14WYBOTFrameworkE12defaultValuexSgvpZ",
-            "mangledName": "$sSq14WYBOTFrameworkE12defaultValuexSgvpZ",
-            "moduleName": "WYBOTFramework",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "τ_0_0?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_0"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:Sq14WYBOTFrameworkE12defaultValuexSgvgZ",
-                "mangledName": "$sSq14WYBOTFrameworkE12defaultValuexSgvgZ",
-                "moduleName": "WYBOTFramework",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<Wrapped>",
-                "static": true,
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:Sq",
-        "mangledName": "$sSq",
-        "moduleName": "Swift",
-        "genericSig": "<τ_0_0 where τ_0_0 : ~Copyable>",
-        "sugared_genericSig": "<Wrapped where Wrapped : ~Copyable>",
-        "declAttributes": [
-          "Frozen"
-        ],
-        "isExternal": true,
-        "isEnumExhaustive": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "DefaultValue",
-            "printedName": "DefaultValue",
-            "usr": "s:14WYBOTFramework12DefaultValueP",
-            "mangledName": "$s14WYBOTFramework12DefaultValueP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ExpressibleByNilLiteral",
-            "printedName": "ExpressibleByNilLiteral",
-            "usr": "s:s23ExpressibleByNilLiteralP",
-            "mangledName": "$ss23ExpressibleByNilLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "AnyObject"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "EncodableWithConfiguration",
-            "printedName": "EncodableWithConfiguration",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "EncodingConfiguration",
-                "printedName": "EncodingConfiguration",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.EncodingConfiguration"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation26EncodableWithConfigurationP",
-            "mangledName": "$s10Foundation26EncodableWithConfigurationP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "DecodableWithConfiguration",
-            "printedName": "DecodableWithConfiguration",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "DecodingConfiguration",
-                "printedName": "DecodingConfiguration",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.DecodingConfiguration"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation26DecodableWithConfigurationP",
-            "mangledName": "$s10Foundation26DecodableWithConfigurationP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Gesture",
-            "printedName": "Gesture",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Value",
-                "printedName": "Value",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.Value"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI7GestureP",
-            "mangledName": "$s7SwiftUI7GestureP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "TableColumnContent",
-            "printedName": "TableColumnContent",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "TableRowValue",
-                "printedName": "TableRowValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.TableRowValue"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "TableColumnSortComparator",
-                "printedName": "TableColumnSortComparator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.TableColumnSortComparator"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "TableColumnBody",
-                "printedName": "TableColumnBody",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI18TableColumnContentP",
-            "mangledName": "$s7SwiftUI18TableColumnContentP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "TabContent",
-            "printedName": "TabContent",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "TabValue",
-                "printedName": "TabValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.TabValue"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "_IdentifiedView",
-                "printedName": "_IdentifiedView",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "τ_0_0._IdentifiedView?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DependentMember",
-                        "printedName": "τ_0_0._IdentifiedView"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "τ_0_0?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_0"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI10TabContentP",
-            "mangledName": "$s7SwiftUI10TabContentP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "TableRowContent",
-            "printedName": "TableRowContent",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "TableRowValue",
-                "printedName": "TableRowValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.TableRowValue"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "TableRowBody",
-                "printedName": "TableRowBody",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI15TableRowContentP",
-            "mangledName": "$s7SwiftUI15TableRowContentP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Commands",
-            "printedName": "Commands",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI8CommandsP",
-            "mangledName": "$s7SwiftUI8CommandsP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ToolbarContent",
-            "printedName": "ToolbarContent",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI14ToolbarContentP",
-            "mangledName": "$s7SwiftUI14ToolbarContentP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomizableToolbarContent",
-            "printedName": "CustomizableToolbarContent",
-            "usr": "s:7SwiftUI26CustomizableToolbarContentP",
-            "mangledName": "$s7SwiftUI26CustomizableToolbarContentP"
           }
         ]
       },
@@ -35828,35 +36992,35 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "BooleanLiteral",
-      "offset": 1952,
+      "offset": 2183,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "BooleanLiteral",
-      "offset": 1995,
+      "offset": 2226,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "Array",
-      "offset": 2030,
+      "offset": 2261,
       "length": 24,
       "value": "[\"dreame-x13b348t\"]"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 50171,
+      "offset": 50402,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 50300,
+      "offset": 50531,
       "length": 1,
       "value": "1"
     },
@@ -36122,392 +37286,392 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 130,
+      "offset": 141,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 145,
+      "offset": 156,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 161,
+      "offset": 172,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 176,
+      "offset": 187,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 196,
+      "offset": 207,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 215,
+      "offset": 226,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 233,
+      "offset": 244,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 251,
+      "offset": 262,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 265,
+      "offset": 276,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 284,
+      "offset": 295,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 301,
+      "offset": 312,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 365,
+      "offset": 376,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 376,
+      "offset": 387,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 390,
+      "offset": 401,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 405,
+      "offset": 416,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 419,
+      "offset": 430,
       "length": 9,
       "value": "4"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 438,
+      "offset": 449,
       "length": 6,
       "value": "5"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 454,
+      "offset": 465,
       "length": 3,
       "value": "6"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 467,
+      "offset": 478,
       "length": 11,
       "value": "7"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 488,
+      "offset": 499,
       "length": 4,
       "value": "8"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 502,
+      "offset": 513,
       "length": 15,
       "value": "9"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 527,
+      "offset": 538,
       "length": 4,
       "value": "10"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 541,
+      "offset": 552,
       "length": 4,
       "value": "11"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 555,
+      "offset": 566,
       "length": 4,
       "value": "12"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 569,
+      "offset": 580,
       "length": 4,
       "value": "13"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 583,
+      "offset": 594,
       "length": 8,
       "value": "14"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 601,
+      "offset": 612,
       "length": 11,
       "value": "15"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 622,
+      "offset": 633,
       "length": 4,
       "value": "16"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 2640,
+      "offset": 2651,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 2648,
+      "offset": 2659,
       "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 2663,
+      "offset": 2674,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 2677,
+      "offset": 2688,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3044,
+      "offset": 3055,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 3957,
+      "offset": 3968,
       "length": 8,
       "value": "\"poolId\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 3980,
+      "offset": 3991,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 4002,
+      "offset": 4013,
       "length": 7,
       "value": "\"shape\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 4025,
+      "offset": 4036,
       "length": 7,
       "value": "\"slope\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 4051,
+      "offset": 4062,
       "length": 10,
       "value": "\"material\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4400,
+      "offset": 4411,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4416,
+      "offset": 4427,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4436,
+      "offset": 4447,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4562,
+      "offset": 4573,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4577,
+      "offset": 4588,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4594,
+      "offset": 4605,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4721,
+      "offset": 4732,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4740,
+      "offset": 4751,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4757,
+      "offset": 4768,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4773,
+      "offset": 4784,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4945,
+      "offset": 4956,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4961,
+      "offset": 4972,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4975,
+      "offset": 4986,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4989,
+      "offset": 5000,
       "length": 3,
       "value": "127"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 5046,
+      "offset": 5057,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 5063,
+      "offset": 5074,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 5081,
+      "offset": 5092,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "BooleanLiteral",
-      "offset": 5249,
+      "offset": 5260,
       "length": 5,
       "value": "false"
     },
