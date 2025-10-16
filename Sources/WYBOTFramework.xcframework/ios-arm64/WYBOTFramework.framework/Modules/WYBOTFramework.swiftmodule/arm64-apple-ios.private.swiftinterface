@@ -910,9 +910,9 @@ public enum WYMediaType {
   }
 }
 public enum BatteryEnergySource : Swift.Sendable {
+  case none
   case solar
   case acAdapter
-  case unknown
   public static func == (a: WYBOTFramework.BatteryEnergySource, b: WYBOTFramework.BatteryEnergySource) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {

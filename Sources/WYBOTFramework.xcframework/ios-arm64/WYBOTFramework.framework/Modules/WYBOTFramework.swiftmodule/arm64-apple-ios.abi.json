@@ -24422,6 +24422,43 @@
         "children": [
           {
             "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.BatteryEnergySource.Type) -> WYBOTFramework.BatteryEnergySource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BatteryEnergySource",
+                    "printedName": "WYBOTFramework.BatteryEnergySource",
+                    "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.BatteryEnergySource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BatteryEnergySource",
+                        "printedName": "WYBOTFramework.BatteryEnergySource",
+                        "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework19BatteryEnergySourceO4noneyA2CmF",
+            "mangledName": "$s14WYBOTFramework19BatteryEnergySourceO4noneyA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
             "name": "solar",
             "printedName": "solar",
             "children": [
@@ -24492,43 +24529,6 @@
             "declKind": "EnumElement",
             "usr": "s:14WYBOTFramework19BatteryEnergySourceO9acAdapteryA2CmF",
             "mangledName": "$s14WYBOTFramework19BatteryEnergySourceO9acAdapteryA2CmF",
-            "moduleName": "WYBOTFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "unknown",
-            "printedName": "unknown",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(WYBOTFramework.BatteryEnergySource.Type) -> WYBOTFramework.BatteryEnergySource",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BatteryEnergySource",
-                    "printedName": "WYBOTFramework.BatteryEnergySource",
-                    "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "WYBOTFramework.BatteryEnergySource.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BatteryEnergySource",
-                        "printedName": "WYBOTFramework.BatteryEnergySource",
-                        "usr": "s:14WYBOTFramework19BatteryEnergySourceO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:14WYBOTFramework19BatteryEnergySourceO7unknownyA2CmF",
-            "mangledName": "$s14WYBOTFramework19BatteryEnergySourceO7unknownyA2CmF",
             "moduleName": "WYBOTFramework"
           },
           {
