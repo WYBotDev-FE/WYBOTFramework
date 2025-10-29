@@ -7464,27 +7464,6 @@
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "WYLib",
-                "printedName": "WYBOTFramework.WYLib",
-                "usr": "s:14WYBOTFramework5WYLibC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:14WYBOTFramework5WYLibCACycfc",
-            "mangledName": "$s14WYBOTFramework5WYLibCACycfc",
-            "moduleName": "WYBOTFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
             "kind": "Function",
             "name": "config",
             "printedName": "config(apiKey:)",
@@ -7597,6 +7576,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC5login_8passwordAA4UserVSS_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -7638,6 +7618,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC8register_8password4nameAA4UserVSS_S2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -7666,6 +7647,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10verifyCodeySbSSYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -7706,6 +7688,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC13resetPassword5email8password3keySbSS_S2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -7764,6 +7747,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC5auth2_10credential5email4name8authType7idTokenAA4UserVSS_S3SAA04AuthH0OSStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -7827,6 +7811,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC8editUser_5token4name6avatarSbSS_S2SSgAHtYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -7861,6 +7846,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10deleteUser_5tokenSbSS_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -7895,6 +7881,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10bindDevice_5tokenAA0D0VAG_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -7930,6 +7917,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10editDevice_5tokenSbAA0D0V_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -7964,6 +7952,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC16autoUpdateDevice_5tokenSbAA0E0V_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8004,6 +7993,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC12editUserPool_6poolId5tokenSbAA6DeviceV_SiSStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8038,6 +8028,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC12removeDevice_5tokenSbSS_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8080,6 +8071,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10deviceList_5tokenSayAA6DeviceVGSS_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -8131,6 +8123,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC13deviceVersion_5tokenSayAA12FirmwareInfoVGSayAA06DeviceD0VG_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -8168,6 +8161,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC8poolList5tokenSayAA4PoolVGSS_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8226,6 +8220,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC8editPool_4name5shape5slope8material5tokenSbSi_SSAA0D5ShapeOAA0D5SlopeOAA0D8MaterialOSStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8260,6 +8255,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10deletePool_5tokenSbSi_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8312,6 +8308,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC7addPool_5shape5slope8material5tokenAA0D0VSS_AA0D5ShapeOAA0D5SlopeOAA0D8MaterialOSStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8379,6 +8376,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10uploadUrls_5index6userId6resultSb_AA13WYMediaResultVtSayAA0I0VG_SiSSAItYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8427,6 +8425,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC11uploadImage_4nameSDyS2SGSo7UIImageC_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8501,6 +8500,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC8feedback4name5email6images6videos4info5tokenSbSS_SSSaySSGAKS2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8535,6 +8535,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC14currentWeather3lat3lonAA0D4DataVSd_SdtYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8557,6 +8558,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC8startBleSo14CBManagerStateVyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -8598,6 +8600,7 @@
             "intro_tvOS": "13.0",
             "intro_watchOS": "6.0",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "Available",
               "Available",
@@ -8624,6 +8627,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC16stopSearchDeviceyyF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -8673,6 +8677,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC22refreshDevicesWanStateyScsyAA6DeviceVs5Error_pGSayAFGYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8694,6 +8699,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10disconnectyyF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -8721,6 +8727,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC13connectDeviceySbAA0D0VYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8749,6 +8756,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC16connectPeriperalySbSo12CBPeripheralCYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -8772,6 +8780,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10deviceInfoAA6DeviceVyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -8795,6 +8804,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC15devicePowerUnitAA6DeviceVyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -8825,6 +8835,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10searchWiFiSayAA10WYWifiInfoVGyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -8860,6 +8871,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC7setWiFi_8passwordSbSS_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -8900,6 +8912,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC6update6device3for4withyAA10ScanDeviceV_AA6WYUnitO10Foundation4DataVtF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -8934,6 +8947,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC11batteryInfo3for4withAA16RobotBatteryDataVSS_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -8957,6 +8971,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC11batteryInfoAA16RobotBatteryDataVyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -8998,6 +9013,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC12setCleanMode_2to4withAA07WYCleanE0OAH_S2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9041,6 +9057,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC9cleanMode8deviceIdScsyAA07WYCleanD0Os5Error_pGSS_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9078,6 +9095,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC9cleanModeScsyAA07WYCleanD0Os5Error_pGyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9107,6 +9125,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10startCleanyAA8WYStatusOSbYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9148,6 +9167,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10startClean_2to4withAA8WYStatusOSb_S2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9185,6 +9205,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC11cleanStatusScsyAA8WYStatusOs5Error_pGyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9228,6 +9249,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC11cleanStatusyScsyAA8WYStatusOs5Error_pGSSYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9251,6 +9273,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC11runningTimeSiyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9280,6 +9303,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC11runningTimeySiSSYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9303,6 +9327,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC5delaySiyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9332,6 +9357,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC5delayySiSSYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9361,6 +9387,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC8setDelayyS2iYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9402,6 +9429,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC8setDelay_2to4withS2i_S2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9425,6 +9453,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC8workTimeSiyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9454,6 +9483,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC8workTime3forSiSS_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9483,6 +9513,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC11setWorkTimeyS2iYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9524,6 +9555,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC11setWorkTime_2to4withS2i_S2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9547,6 +9579,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10dockStatusAA06WYDockD0OyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9576,6 +9609,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10dockStatus3forAA06WYDockD0OSS_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9605,6 +9639,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC4dock5startAA12WYDockStatusOSb_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9646,6 +9681,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC4dock5start2to4withAA12WYDockStatusOSb_S2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9669,6 +9705,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10deviceFunsAA10WYFunctionVyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9698,6 +9735,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10deviceFuns3forAA10WYFunctionVSS_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9721,6 +9759,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10cycleTimerAA07WYCycleD0VyYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9750,6 +9789,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10cycleTimer3forAA07WYCycleD0VSS_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9779,6 +9819,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC13setCycleTimeryAA07WYCycleE0VAFYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9820,6 +9861,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC13setCycleTimer_2to4withAA07WYCycleE0VAH_S2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -9857,6 +9899,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC9weekTimer8deviceIdSayAA10WYWeekPlanVGSS_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -9893,6 +9936,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC12setWeekTimer5plansSbSayAA10WYWeekPlanVG_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -9941,6 +9985,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC12setWeekTimer_8deviceId5tokenSbSayAA10WYWeekPlanVG_S2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -9974,6 +10019,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC9wakeLteUp8deviceId5tokenySS_SStF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -10001,6 +10047,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC12floorPattern8deviceIdAA10WYPatternsOSS_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10029,6 +10076,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC11wallPattern8deviceIdAA10WYPatternsOSS_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10063,6 +10111,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10setPattern5floor4wallSbAA10WYPatternsO_AHtYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10109,6 +10158,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC10setPattern5floor4wall8deviceId5tokenSbAA10WYPatternsO_AJS2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10137,6 +10187,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC14setWallPatternySbAA10WYPatternsOYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10177,6 +10228,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC14setWallPattern_8deviceId5tokenSbAA10WYPatternsO_S2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10205,6 +10257,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC15setFloorPatternySbAA10WYPatternsOYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10245,6 +10298,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC15setFloorPattern_8deviceId5tokenSbAA10WYPatternsO_S2StYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10278,6 +10332,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC11pumpControl8deviceId2onySS_SbtKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10311,6 +10366,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC13manaulControl8deviceId5pointySS_So7CGPointVtKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10344,6 +10400,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC9areaClean8deviceId5tokenySS_SStKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10372,6 +10429,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC16calibratingState8deviceIdSiSS_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10406,6 +10464,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC15calibrateSensor8deviceId5tokenSiSS_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10448,6 +10507,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC14updateFirmware8deviceIdScsySis5Error_pGSS_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10482,6 +10542,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC19setBoatAutoCleaning4isOn8deviceIdS2b_SStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10510,6 +10571,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC21checkBoatAutoCleaning3forSbSS_tYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10552,6 +10614,7 @@
             "mangledName": "$s14WYBOTFramework5WYLibC21fetchBoatStreamStatusyScsyAA03BleE4DataOs5Error_pGSSYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "throwing": true,
@@ -10563,9 +10626,11 @@
         "mangledName": "$s14WYBOTFramework5WYLibC",
         "moduleName": "WYBOTFramework",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "RawDocComment"
         ],
+        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -10580,6 +10645,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -36984,43 +37056,50 @@
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
+      "kind": "StringLiteral",
+      "offset": 213,
+      "length": 18,
+      "value": "\"WYLib.DP.Parsing\""
+    },
+    {
+      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 232,
+      "offset": 448,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "BooleanLiteral",
-      "offset": 2296,
+      "offset": 2380,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "BooleanLiteral",
-      "offset": 2339,
+      "offset": 2423,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "Array",
-      "offset": 2374,
+      "offset": 2458,
       "length": 24,
       "value": "[\"dreame-x13b348t\"]"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 50518,
+      "offset": 58224,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 50647,
+      "offset": 58353,
       "length": 1,
       "value": "1"
     },
@@ -37257,8 +37336,15 @@
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 281,
+      "length": 26,
+      "value": "\"WYLib.BLE.CentralManager\""
+    },
+    {
+      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/BluetoothManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 376,
+      "offset": 466,
       "length": 5,
       "value": "false"
     },
@@ -37676,6 +37762,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYBleManager.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
+      "length": 22,
+      "value": "\"WYLib.BLE.BleManager\""
+    },
+    {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Http\/Response.swift",
       "kind": "StringLiteral",
       "offset": 951,
@@ -37930,35 +38023,35 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 1762,
+      "offset": 1784,
       "length": 6,
       "value": "\"iWY-\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "IntegerLiteral",
-      "offset": 1800,
+      "offset": 1822,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 1873,
+      "offset": 1895,
       "length": 12,
       "value": "\"wyindustry\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 1913,
+      "offset": 1935,
       "length": 21,
       "value": "\"nwe_GTG4faf2qyx8ugx\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "IntegerLiteral",
-      "offset": 1994,
+      "offset": 2016,
       "length": 4,
       "value": "1883"
     },

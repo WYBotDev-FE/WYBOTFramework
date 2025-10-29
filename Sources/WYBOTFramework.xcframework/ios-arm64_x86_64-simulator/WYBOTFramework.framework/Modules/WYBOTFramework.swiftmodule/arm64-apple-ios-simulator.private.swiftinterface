@@ -369,97 +369,96 @@ public struct UpdatingErrorInfo : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public class WYLib {
+@_hasMissingDesignatedInitializers final public class WYLib : Swift.Sendable {
   public static let shared: WYBOTFramework.WYLib
-  public init()
   public static func config(apiKey: Swift.String)
   public static func config(debug: Swift.Bool)
   public static func config(timeout: Swift.UInt64)
-  public func login(_ user: Swift.String, password: Swift.String) async throws -> WYBOTFramework.User
-  public func register(_ user: Swift.String, password: Swift.String, name: Swift.String) async throws -> WYBOTFramework.User
-  public func verifyCode(_ email: Swift.String) async throws -> Swift.Bool
-  public func resetPassword(email: Swift.String, password: Swift.String, key: Swift.String) async throws -> Swift.Bool
-  public func auth2(_ userId: Swift.String, credential: Swift.String, email: Swift.String, name: Swift.String, authType: WYBOTFramework.AuthType, idToken: Swift.String) async throws -> WYBOTFramework.User
-  public func editUser(_ userId: Swift.String, token: Swift.String, name: Swift.String?, avatar: Swift.String?) async throws -> Swift.Bool
-  public func deleteUser(_ userId: Swift.String, token: Swift.String) async throws -> Swift.Bool
-  public func bindDevice(_ device: WYBOTFramework.Device, token: Swift.String) async throws -> WYBOTFramework.Device
-  public func editDevice(_ device: WYBOTFramework.Device, token: Swift.String) async throws -> Swift.Bool
-  public func autoUpdateDevice(_ device: WYBOTFramework.Device, token: Swift.String) async throws -> Swift.Bool
-  public func editUserPool(_ device: WYBOTFramework.Device, poolId: Swift.Int, token: Swift.String) async throws -> Swift.Bool
-  public func removeDevice(_ deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
-  public func deviceList(_ userId: Swift.String, token: Swift.String) async throws -> [WYBOTFramework.Device]
-  public func deviceVersion(_ units: [WYBOTFramework.DeviceVersion], token: Swift.String) async throws -> [WYBOTFramework.FirmwareInfo]
-  public func poolList(token: Swift.String) async throws -> [WYBOTFramework.Pool]
-  public func editPool(_ id: Swift.Int, name: Swift.String, shape: WYBOTFramework.PoolShape, slope: WYBOTFramework.PoolSlope, material: WYBOTFramework.PoolMaterial, token: Swift.String) async throws -> Swift.Bool
-  public func deletePool(_ id: Swift.Int, token: Swift.String) async throws -> Swift.Bool
-  public func addPool(_ name: Swift.String, shape: WYBOTFramework.PoolShape, slope: WYBOTFramework.PoolSlope, material: WYBOTFramework.PoolMaterial, token: Swift.String) async throws -> WYBOTFramework.Pool
-  public func uploadUrls(_ medias: [WYBOTFramework.WYMedia], index: Swift.Int, userId: Swift.String, result: WYBOTFramework.WYMediaResult) async throws -> (Swift.Bool, WYBOTFramework.WYMediaResult)
-  public func uploadImage(_ image: UIKit.UIImage, name: Swift.String) async throws -> [Swift.String : Swift.String]
-  public func feedback(name: Swift.String, email: Swift.String, images: [Swift.String], videos: [Swift.String], info: Swift.String, token: Swift.String) async throws -> Swift.Bool
-  public func currentWeather(lat: Swift.Double, lon: Swift.Double) async throws -> WYBOTFramework.WeatherData
-  public func startBle() async throws -> CoreBluetooth.CBManagerState
+  final public func login(_ user: Swift.String, password: Swift.String) async throws -> WYBOTFramework.User
+  final public func register(_ user: Swift.String, password: Swift.String, name: Swift.String) async throws -> WYBOTFramework.User
+  final public func verifyCode(_ email: Swift.String) async throws -> Swift.Bool
+  final public func resetPassword(email: Swift.String, password: Swift.String, key: Swift.String) async throws -> Swift.Bool
+  final public func auth2(_ userId: Swift.String, credential: Swift.String, email: Swift.String, name: Swift.String, authType: WYBOTFramework.AuthType, idToken: Swift.String) async throws -> WYBOTFramework.User
+  final public func editUser(_ userId: Swift.String, token: Swift.String, name: Swift.String?, avatar: Swift.String?) async throws -> Swift.Bool
+  final public func deleteUser(_ userId: Swift.String, token: Swift.String) async throws -> Swift.Bool
+  final public func bindDevice(_ device: WYBOTFramework.Device, token: Swift.String) async throws -> WYBOTFramework.Device
+  final public func editDevice(_ device: WYBOTFramework.Device, token: Swift.String) async throws -> Swift.Bool
+  final public func autoUpdateDevice(_ device: WYBOTFramework.Device, token: Swift.String) async throws -> Swift.Bool
+  final public func editUserPool(_ device: WYBOTFramework.Device, poolId: Swift.Int, token: Swift.String) async throws -> Swift.Bool
+  final public func removeDevice(_ deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
+  final public func deviceList(_ userId: Swift.String, token: Swift.String) async throws -> [WYBOTFramework.Device]
+  final public func deviceVersion(_ units: [WYBOTFramework.DeviceVersion], token: Swift.String) async throws -> [WYBOTFramework.FirmwareInfo]
+  final public func poolList(token: Swift.String) async throws -> [WYBOTFramework.Pool]
+  final public func editPool(_ id: Swift.Int, name: Swift.String, shape: WYBOTFramework.PoolShape, slope: WYBOTFramework.PoolSlope, material: WYBOTFramework.PoolMaterial, token: Swift.String) async throws -> Swift.Bool
+  final public func deletePool(_ id: Swift.Int, token: Swift.String) async throws -> Swift.Bool
+  final public func addPool(_ name: Swift.String, shape: WYBOTFramework.PoolShape, slope: WYBOTFramework.PoolSlope, material: WYBOTFramework.PoolMaterial, token: Swift.String) async throws -> WYBOTFramework.Pool
+  final public func uploadUrls(_ medias: [WYBOTFramework.WYMedia], index: Swift.Int, userId: Swift.String, result: WYBOTFramework.WYMediaResult) async throws -> (Swift.Bool, WYBOTFramework.WYMediaResult)
+  final public func uploadImage(_ image: UIKit.UIImage, name: Swift.String) async throws -> [Swift.String : Swift.String]
+  final public func feedback(name: Swift.String, email: Swift.String, images: [Swift.String], videos: [Swift.String], info: Swift.String, token: Swift.String) async throws -> Swift.Bool
+  final public func currentWeather(lat: Swift.Double, lon: Swift.Double) async throws -> WYBOTFramework.WeatherData
+  final public func startBle() async throws -> CoreBluetooth.CBManagerState
   @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
-  public func searchDevice() async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.ScanDevice, any Swift.Error>
-  public func stopSearchDevice()
-  public func refreshDevicesWanState(_ devices: [WYBOTFramework.Device]) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.Device, any Swift.Error>
-  public func disconnect()
-  public func connectDevice(_ device: WYBOTFramework.Device) async throws -> Swift.Bool
-  public func connectPeriperal(_ periperal: CoreBluetooth.CBPeripheral) async throws -> Swift.Bool
-  public func deviceInfo() async throws -> WYBOTFramework.Device
-  public func devicePowerUnit() async throws -> WYBOTFramework.Device
-  public func searchWiFi() async throws -> [WYBOTFramework.WYWifiInfo]
-  public func setWiFi(_ ssid: Swift.String, password: Swift.String) async throws -> Swift.Bool
-  public func update(device: WYBOTFramework.ScanDevice, for unit: WYBOTFramework.WYUnit, with firmware: Foundation.Data)
-  public func batteryInfo(for deviceId: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.RobotBatteryData
-  public func batteryInfo() async throws -> WYBOTFramework.RobotBatteryData
-  public func setCleanMode(_ mode: WYBOTFramework.WYCleanMode, to device: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.WYCleanMode
-  public func cleanMode(deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.WYCleanMode, any Swift.Error>
-  public func cleanMode() async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.WYCleanMode, any Swift.Error>
-  public func startClean(_ start: Swift.Bool) async throws -> WYBOTFramework.WYStatus
-  public func startClean(_ start: Swift.Bool, to deviceId: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.WYStatus
-  public func cleanStatus() async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.WYStatus, any Swift.Error>
-  public func cleanStatus(_ deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.WYStatus, any Swift.Error>
-  public func runningTime() async throws -> Swift.Int
-  public func runningTime(_ deviceId: Swift.String) async throws -> Swift.Int
-  public func delay() async throws -> Swift.Int
-  public func delay(_ deviceId: Swift.String) async throws -> Swift.Int
-  public func setDelay(_ delay: Swift.Int) async throws -> Swift.Int
-  public func setDelay(_ delay: Swift.Int, to deviceId: Swift.String, with token: Swift.String) async throws -> Swift.Int
-  public func workTime() async throws -> Swift.Int
-  public func workTime(for deviceId: Swift.String) async throws -> Swift.Int
-  public func setWorkTime(_ time: Swift.Int) async throws -> Swift.Int
-  public func setWorkTime(_ time: Swift.Int, to deviceId: Swift.String, with token: Swift.String) async throws -> Swift.Int
-  public func dockStatus() async throws -> WYBOTFramework.WYDockStatus
-  public func dockStatus(for deviceId: Swift.String) async throws -> WYBOTFramework.WYDockStatus
-  public func dock(start: Swift.Bool) async throws -> WYBOTFramework.WYDockStatus
-  public func dock(start: Swift.Bool, to deviceId: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.WYDockStatus
-  public func deviceFuns() async throws -> WYBOTFramework.WYFunction
-  public func deviceFuns(for deviceId: Swift.String) async throws -> WYBOTFramework.WYFunction
-  public func cycleTimer() async throws -> WYBOTFramework.WYCycleTimer
-  public func cycleTimer(for deviceId: Swift.String) async throws -> WYBOTFramework.WYCycleTimer
-  public func setCycleTimer(_ timer: WYBOTFramework.WYCycleTimer) async throws -> WYBOTFramework.WYCycleTimer
-  public func setCycleTimer(_ timer: WYBOTFramework.WYCycleTimer, to deviceId: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.WYCycleTimer
-  public func weekTimer(deviceId: Swift.String) async throws -> [WYBOTFramework.WYWeekPlan]
-  public func setWeekTimer(plans: [WYBOTFramework.WYWeekPlan]) async throws -> Swift.Bool
-  public func setWeekTimer(_ plans: [WYBOTFramework.WYWeekPlan], deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
-  public func wakeLteUp(deviceId: Swift.String, token: Swift.String)
-  public func floorPattern(deviceId: Swift.String) async throws -> WYBOTFramework.WYPatterns
-  public func wallPattern(deviceId: Swift.String) async throws -> WYBOTFramework.WYPatterns
-  public func setPattern(floor: WYBOTFramework.WYPatterns, wall: WYBOTFramework.WYPatterns) async throws -> Swift.Bool
-  public func setPattern(floor: WYBOTFramework.WYPatterns, wall: WYBOTFramework.WYPatterns, deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
-  public func setWallPattern(_ wall: WYBOTFramework.WYPatterns) async throws -> Swift.Bool
-  public func setWallPattern(_ wall: WYBOTFramework.WYPatterns, deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
-  public func setFloorPattern(_ floor: WYBOTFramework.WYPatterns) async throws -> Swift.Bool
-  public func setFloorPattern(_ floor: WYBOTFramework.WYPatterns, deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
-  public func pumpControl(deviceId: Swift.String, on: Swift.Bool) throws
-  public func manaulControl(deviceId: Swift.String, point: CoreFoundation.CGPoint) throws
-  public func areaClean(deviceId: Swift.String, token: Swift.String) throws
-  public func calibratingState(deviceId: Swift.String) async throws -> Swift.Int
-  public func calibrateSensor(deviceId: Swift.String, token: Swift.String) async throws -> Swift.Int
-  public func updateFirmware(deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<Swift.Int, any Swift.Error>
-  public func setBoatAutoCleaning(isOn: Swift.Bool, deviceId: Swift.String) async throws -> Swift.Bool
-  public func checkBoatAutoCleaning(for deviceId: Swift.String) async throws -> Swift.Bool
-  public func fetchBoatStreamStatus(_ deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.BleStreamData, any Swift.Error>
+  final public func searchDevice() async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.ScanDevice, any Swift.Error>
+  final public func stopSearchDevice()
+  final public func refreshDevicesWanState(_ devices: [WYBOTFramework.Device]) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.Device, any Swift.Error>
+  final public func disconnect()
+  final public func connectDevice(_ device: WYBOTFramework.Device) async throws -> Swift.Bool
+  final public func connectPeriperal(_ periperal: CoreBluetooth.CBPeripheral) async throws -> Swift.Bool
+  final public func deviceInfo() async throws -> WYBOTFramework.Device
+  final public func devicePowerUnit() async throws -> WYBOTFramework.Device
+  final public func searchWiFi() async throws -> [WYBOTFramework.WYWifiInfo]
+  final public func setWiFi(_ ssid: Swift.String, password: Swift.String) async throws -> Swift.Bool
+  final public func update(device: WYBOTFramework.ScanDevice, for unit: WYBOTFramework.WYUnit, with firmware: Foundation.Data)
+  final public func batteryInfo(for deviceId: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.RobotBatteryData
+  final public func batteryInfo() async throws -> WYBOTFramework.RobotBatteryData
+  final public func setCleanMode(_ mode: WYBOTFramework.WYCleanMode, to device: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.WYCleanMode
+  final public func cleanMode(deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.WYCleanMode, any Swift.Error>
+  final public func cleanMode() async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.WYCleanMode, any Swift.Error>
+  final public func startClean(_ start: Swift.Bool) async throws -> WYBOTFramework.WYStatus
+  final public func startClean(_ start: Swift.Bool, to deviceId: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.WYStatus
+  final public func cleanStatus() async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.WYStatus, any Swift.Error>
+  final public func cleanStatus(_ deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.WYStatus, any Swift.Error>
+  final public func runningTime() async throws -> Swift.Int
+  final public func runningTime(_ deviceId: Swift.String) async throws -> Swift.Int
+  final public func delay() async throws -> Swift.Int
+  final public func delay(_ deviceId: Swift.String) async throws -> Swift.Int
+  final public func setDelay(_ delay: Swift.Int) async throws -> Swift.Int
+  final public func setDelay(_ delay: Swift.Int, to deviceId: Swift.String, with token: Swift.String) async throws -> Swift.Int
+  final public func workTime() async throws -> Swift.Int
+  final public func workTime(for deviceId: Swift.String) async throws -> Swift.Int
+  final public func setWorkTime(_ time: Swift.Int) async throws -> Swift.Int
+  final public func setWorkTime(_ time: Swift.Int, to deviceId: Swift.String, with token: Swift.String) async throws -> Swift.Int
+  final public func dockStatus() async throws -> WYBOTFramework.WYDockStatus
+  final public func dockStatus(for deviceId: Swift.String) async throws -> WYBOTFramework.WYDockStatus
+  final public func dock(start: Swift.Bool) async throws -> WYBOTFramework.WYDockStatus
+  final public func dock(start: Swift.Bool, to deviceId: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.WYDockStatus
+  final public func deviceFuns() async throws -> WYBOTFramework.WYFunction
+  final public func deviceFuns(for deviceId: Swift.String) async throws -> WYBOTFramework.WYFunction
+  final public func cycleTimer() async throws -> WYBOTFramework.WYCycleTimer
+  final public func cycleTimer(for deviceId: Swift.String) async throws -> WYBOTFramework.WYCycleTimer
+  final public func setCycleTimer(_ timer: WYBOTFramework.WYCycleTimer) async throws -> WYBOTFramework.WYCycleTimer
+  final public func setCycleTimer(_ timer: WYBOTFramework.WYCycleTimer, to deviceId: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.WYCycleTimer
+  final public func weekTimer(deviceId: Swift.String) async throws -> [WYBOTFramework.WYWeekPlan]
+  final public func setWeekTimer(plans: [WYBOTFramework.WYWeekPlan]) async throws -> Swift.Bool
+  final public func setWeekTimer(_ plans: [WYBOTFramework.WYWeekPlan], deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
+  final public func wakeLteUp(deviceId: Swift.String, token: Swift.String)
+  final public func floorPattern(deviceId: Swift.String) async throws -> WYBOTFramework.WYPatterns
+  final public func wallPattern(deviceId: Swift.String) async throws -> WYBOTFramework.WYPatterns
+  final public func setPattern(floor: WYBOTFramework.WYPatterns, wall: WYBOTFramework.WYPatterns) async throws -> Swift.Bool
+  final public func setPattern(floor: WYBOTFramework.WYPatterns, wall: WYBOTFramework.WYPatterns, deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
+  final public func setWallPattern(_ wall: WYBOTFramework.WYPatterns) async throws -> Swift.Bool
+  final public func setWallPattern(_ wall: WYBOTFramework.WYPatterns, deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
+  final public func setFloorPattern(_ floor: WYBOTFramework.WYPatterns) async throws -> Swift.Bool
+  final public func setFloorPattern(_ floor: WYBOTFramework.WYPatterns, deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
+  final public func pumpControl(deviceId: Swift.String, on: Swift.Bool) throws
+  final public func manaulControl(deviceId: Swift.String, point: CoreFoundation.CGPoint) throws
+  final public func areaClean(deviceId: Swift.String, token: Swift.String) throws
+  final public func calibratingState(deviceId: Swift.String) async throws -> Swift.Int
+  final public func calibrateSensor(deviceId: Swift.String, token: Swift.String) async throws -> Swift.Int
+  final public func updateFirmware(deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<Swift.Int, any Swift.Error>
+  final public func setBoatAutoCleaning(isOn: Swift.Bool, deviceId: Swift.String) async throws -> Swift.Bool
+  final public func checkBoatAutoCleaning(for deviceId: Swift.String) async throws -> Swift.Bool
+  final public func fetchBoatStreamStatus(_ deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.BleStreamData, any Swift.Error>
   @objc deinit
 }
 extension Swift.UInt64 {
