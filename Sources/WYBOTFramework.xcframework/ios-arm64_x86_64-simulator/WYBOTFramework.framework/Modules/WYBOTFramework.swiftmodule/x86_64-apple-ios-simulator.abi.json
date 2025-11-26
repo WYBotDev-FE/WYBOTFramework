@@ -8124,8 +8124,7 @@
             "moduleName": "WYBOTFramework",
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
