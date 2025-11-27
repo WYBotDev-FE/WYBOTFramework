@@ -7971,9 +7971,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Device",
-                "printedName": "WYBOTFramework.Device",
-                "usr": "s:14WYBOTFramework6DeviceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -7989,8 +7989,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14WYBOTFramework5WYLibC12editUserPool_6poolId5tokenSbAA6DeviceV_SiSStYaKF",
-            "mangledName": "$s14WYBOTFramework5WYLibC12editUserPool_6poolId5tokenSbAA6DeviceV_SiSStYaKF",
+            "usr": "s:14WYBOTFramework5WYLibC12editUserPool_6poolId5tokenSbSS_SiSStYaKF",
+            "mangledName": "$s14WYBOTFramework5WYLibC12editUserPool_6poolId5tokenSbSS_SiSStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
               "Final",
@@ -37091,14 +37091,14 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 58224,
+      "offset": 58219,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 58353,
+      "offset": 58348,
       "length": 1,
       "value": "1"
     },

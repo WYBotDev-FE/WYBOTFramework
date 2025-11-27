@@ -384,7 +384,7 @@ public struct UpdatingErrorInfo : Swift.Codable {
   final public func bindDevice(_ device: WYBOTFramework.Device, token: Swift.String) async throws -> WYBOTFramework.Device
   final public func editDevice(_ device: WYBOTFramework.Device, token: Swift.String) async throws -> Swift.Bool
   final public func autoUpdateDevice(_ device: WYBOTFramework.Device, token: Swift.String) async throws -> Swift.Bool
-  final public func editUserPool(_ device: WYBOTFramework.Device, poolId: Swift.Int, token: Swift.String) async throws -> Swift.Bool
+  final public func editUserPool(_ deviceId: Swift.String, poolId: Swift.Int, token: Swift.String) async throws -> Swift.Bool
   final public func removeDevice(_ deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
   final public func deviceList(_ userId: Swift.String, token: Swift.String) async throws -> [WYBOTFramework.Device]
   final public func deviceVersion(_ units: [WYBOTFramework.DeviceVersion], token: Swift.String) async throws -> [WYBOTFramework.FirmwareInfo]
