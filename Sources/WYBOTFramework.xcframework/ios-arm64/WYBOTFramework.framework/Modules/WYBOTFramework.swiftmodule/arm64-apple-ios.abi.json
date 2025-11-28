@@ -7549,6 +7549,34 @@
           },
           {
             "kind": "Function",
+            "name": "config",
+            "printedName": "config(showDebugLog:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework5WYLibC6config12showDebugLogySb_tFZ",
+            "mangledName": "$s14WYBOTFramework5WYLibC6config12showDebugLogySb_tFZ",
+            "moduleName": "WYBOTFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "login",
             "printedName": "login(_:password:)",
             "children": [
@@ -38707,7 +38735,7 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/Peripherial.swift",
       "kind": "StringLiteral",
-      "offset": 1725,
+      "offset": 1716,
       "length": 18,
       "value": "\"AdvDataLocalName\""
     },
@@ -38833,14 +38861,14 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 59441,
+      "offset": 59521,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 59570,
+      "offset": 59650,
       "length": 1,
       "value": "1"
     },
@@ -39064,7 +39092,7 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Util\/Async+.swift",
       "kind": "BooleanLiteral",
-      "offset": 2820,
+      "offset": 2817,
       "length": 5,
       "value": "false"
     },
@@ -39799,35 +39827,35 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 1784,
+      "offset": 1781,
       "length": 6,
       "value": "\"iWY-\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "IntegerLiteral",
-      "offset": 1822,
+      "offset": 1819,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 1895,
+      "offset": 1892,
       "length": 12,
       "value": "\"wyindustry\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 1935,
+      "offset": 1932,
       "length": 21,
       "value": "\"nwe_GTG4faf2qyx8ugx\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "IntegerLiteral",
-      "offset": 2016,
+      "offset": 2013,
       "length": 4,
       "value": "1883"
     },
@@ -39967,56 +39995,56 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "BooleanLiteral",
-      "offset": 133,
+      "offset": 121,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 220,
+      "offset": 208,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 874,
+      "offset": 862,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 1466,
+      "offset": 1454,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 1941,
+      "offset": 1929,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 3068,
+      "offset": 3056,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 4124,
+      "offset": 4112,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 4971,
+      "offset": 4959,
       "length": 2,
       "value": "\"\""
     },

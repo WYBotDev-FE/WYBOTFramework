@@ -374,6 +374,7 @@ public struct UpdatingErrorInfo : Swift.Codable {
   public static func config(apiKey: Swift.String)
   public static func config(debug: Swift.Bool)
   public static func config(timeout: Swift.UInt64)
+  public static func config(showDebugLog: Swift.Bool)
   final public func login(_ user: Swift.String, password: Swift.String) async throws -> WYBOTFramework.User
   final public func register(_ user: Swift.String, password: Swift.String, name: Swift.String) async throws -> WYBOTFramework.User
   final public func verifyCode(_ email: Swift.String) async throws -> Swift.Bool
