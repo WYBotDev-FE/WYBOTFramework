@@ -577,6 +577,7 @@ public struct WYDataPoint : Swift.Codable {
     public init(from decoder: any Swift.Decoder) throws
   }
   public init(cmd: Swift.Int = 4, dp: [WYBOTFramework.WYDataPoint.dataPoint])
+  public init(dp: WYBOTFramework.WYDataPoint.dataPoint)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -584,7 +585,7 @@ public enum WYStatus : Swift.Int, Swift.Sendable {
   case manaul
   case stop
   case start
-  case test
+  case cleaning
   case returning
   case shutting
   case warning
@@ -592,6 +593,10 @@ public enum WYStatus : Swift.Int, Swift.Sendable {
   case iot
   case unknown
   case relay
+  case areaCleaning
+  case mapMatching
+  case mapping
+  case ack
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
