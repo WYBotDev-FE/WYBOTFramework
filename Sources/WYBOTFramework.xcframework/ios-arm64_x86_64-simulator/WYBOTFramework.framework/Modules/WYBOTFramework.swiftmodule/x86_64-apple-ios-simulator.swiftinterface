@@ -384,7 +384,7 @@ public struct UpdatingErrorInfo : Swift.Codable {
   final public func bindDevice(_ device: WYBOTFramework.Device, token: Swift.String) async throws -> WYBOTFramework.Device
   final public func editDevice(_ device: WYBOTFramework.Device, token: Swift.String) async throws -> Swift.Bool
   final public func autoUpdateDevice(_ device: WYBOTFramework.Device, token: Swift.String) async throws -> Swift.Bool
-  final public func editUserPool(_ deviceId: Swift.String, poolId: Swift.Int, token: Swift.String) async throws -> Swift.Bool
+  final public func editUserPool(_ deviceId: Swift.String, pool: WYBOTFramework.Pool, token: Swift.String) async throws -> Swift.Bool
   final public func removeDevice(_ deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
   final public func deviceList(_ userId: Swift.String, token: Swift.String) async throws -> [WYBOTFramework.Device]
   final public func deviceVersion(_ units: [WYBOTFramework.DeviceVersion], token: Swift.String) async throws -> [WYBOTFramework.FirmwareInfo]
@@ -572,10 +572,11 @@ public func withTimeout<Return>(inSeconds: Swift.UInt64, @_inheritActorContext _
 public struct WYDataPoint : Swift.Codable {
   public struct dataPoint : Swift.Codable {
     public init(id: Swift.Int, type: Swift.Int, len: Swift.Int, dataString: Swift.String)
+    public init(dp: any WYBOTFramework.WYDataPointPotocal)
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
-  public init(cmd: Swift.Int, dp: [WYBOTFramework.WYDataPoint.dataPoint])
+  public init(cmd: Swift.Int = 4, dp: [WYBOTFramework.WYDataPoint.dataPoint])
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -655,31 +656,78 @@ public struct Pool : Swift.Codable, Swift.Equatable, Swift.Identifiable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum PoolShape : Swift.Int {
+extension WYBOTFramework.Pool {
+  public var shapeValue: WYBOTFramework.PoolShape {
+    get
+  }
+  public var slopeValue: WYBOTFramework.PoolSlope {
+    get
+  }
+  public var materialValue: WYBOTFramework.PoolMaterial {
+    get
+  }
+}
+public enum PoolShape : Swift.Int, WYBOTFramework.WYDataPointPotocal, Swift.Sendable {
   case rectangle
   case round
   case irregular
+  public var _id: Swift.Int {
+    get
+  }
+  public var _type: WYBOTFramework.DataPointType {
+    get
+  }
+  public var _len: Swift.Int {
+    get
+  }
+  public var _data: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-public enum PoolSlope : Swift.Int {
+public enum PoolSlope : Swift.Int, WYBOTFramework.WYDataPointPotocal, Swift.Sendable {
   case flat
   case deep
   case hopper
+  public var _id: Swift.Int {
+    get
+  }
+  public var _type: WYBOTFramework.DataPointType {
+    get
+  }
+  public var _len: Swift.Int {
+    get
+  }
+  public var _data: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-public enum PoolMaterial : Swift.Int {
+public enum PoolMaterial : Swift.Int, WYBOTFramework.WYDataPointPotocal, Swift.Sendable {
   case rough
   case standard
   case smooth
   case fiber
+  public var _id: Swift.Int {
+    get
+  }
+  public var _type: WYBOTFramework.DataPointType {
+    get
+  }
+  public var _len: Swift.Int {
+    get
+  }
+  public var _data: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -707,12 +755,15 @@ public enum WYCalibrate : Swift.Int {
     get
   }
 }
-public struct WYWeekPlan : Swift.Identifiable, Swift.Equatable {
+public struct WYWeekPlan : Swift.Identifiable, Swift.Equatable, Swift.Sendable {
   public var id: Foundation.UUID
   public let weekday: Swift.Int
   public var timeString: Foundation.Date
   public var scheduled: Swift.Bool
-  public init(id: Foundation.UUID = UUID(), weekday: Swift.Int, timeString: Foundation.Date = Date(), scheduled: Swift.Bool)
+  public var cleanDuration: Swift.Int?
+  public var cleanMode: WYBOTFramework.WYCleanMode?
+  public var endDateTime: Foundation.Date?
+  public init(id: Foundation.UUID = UUID(), weekday: Swift.Int, timeString: Foundation.Date = Date(), scheduled: Swift.Bool, cleanDuration: Swift.Int? = nil, cleanMode: WYBOTFramework.WYCleanMode? = nil)
   public func weekDayTitle() -> Swift.String
   public static func == (a: WYBOTFramework.WYWeekPlan, b: WYBOTFramework.WYWeekPlan) -> Swift.Bool
   public typealias ID = Foundation.UUID
@@ -1117,6 +1168,24 @@ extension WYBOTFramework.WYBoardType {
     get
   }
 }
+public protocol WYDataPointPotocal {
+  var _id: Swift.Int { get }
+  var _type: WYBOTFramework.DataPointType { get }
+  var _len: Swift.Int { get }
+  var _data: Swift.String { get }
+}
+public enum DataPointType : Swift.Int {
+  case raw
+  case bool
+  case number
+  case `enum`
+  case bitmap
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public struct WYNotificationName {
   public static let userTokenExpired: Foundation.Notification.Name
 }
@@ -1176,3 +1245,6 @@ extension WYBOTFramework.AuthType : Swift.Equatable {}
 extension WYBOTFramework.AuthType : Swift.Hashable {}
 extension WYBOTFramework.WYBoardType : Swift.Hashable {}
 extension WYBOTFramework.WYBoardType : Swift.RawRepresentable {}
+extension WYBOTFramework.DataPointType : Swift.Equatable {}
+extension WYBOTFramework.DataPointType : Swift.Hashable {}
+extension WYBOTFramework.DataPointType : Swift.RawRepresentable {}

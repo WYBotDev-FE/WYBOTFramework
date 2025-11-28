@@ -7961,7 +7961,7 @@
           {
             "kind": "Function",
             "name": "editUserPool",
-            "printedName": "editUserPool(_:poolId:token:)",
+            "printedName": "editUserPool(_:pool:token:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7977,9 +7977,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Pool",
+                "printedName": "WYBOTFramework.Pool",
+                "usr": "s:14WYBOTFramework4PoolV"
               },
               {
                 "kind": "TypeNominal",
@@ -7989,12 +7989,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14WYBOTFramework5WYLibC12editUserPool_6poolId5tokenSbSS_SiSStYaKF",
-            "mangledName": "$s14WYBOTFramework5WYLibC12editUserPool_6poolId5tokenSbSS_SiSStYaKF",
+            "usr": "s:14WYBOTFramework5WYLibC12editUserPool_4pool5tokenSbSS_AA0E0VSStYaKF",
+            "mangledName": "$s14WYBOTFramework5WYLibC12editUserPool_4pool5tokenSbSS_AA0E0VSStYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -15004,6 +15005,33 @@
               {
                 "kind": "Constructor",
                 "name": "init",
+                "printedName": "init(dp:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "dataPoint",
+                    "printedName": "WYBOTFramework.WYDataPoint.dataPoint",
+                    "usr": "s:14WYBOTFramework11WYDataPointV04dataC0V"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WYDataPointPotocal",
+                    "printedName": "any WYBOTFramework.WYDataPointPotocal",
+                    "usr": "s:14WYBOTFramework18WYDataPointPotocalP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14WYBOTFramework11WYDataPointV04dataC0V2dpAeA0bC7Potocal_p_tcfc",
+                "mangledName": "$s14WYBOTFramework11WYDataPointV04dataC0V2dpAeA0bC7Potocal_p_tcfc",
+                "moduleName": "WYBOTFramework",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
                 "printedName": "init(from:)",
                 "children": [
                   {
@@ -15106,6 +15134,7 @@
                 "kind": "TypeNominal",
                 "name": "Int",
                 "printedName": "Swift.Int",
+                "hasDefaultArg": true,
                 "usr": "s:Si"
               },
               {
@@ -17876,6 +17905,123 @@
             "static": true,
             "implicit": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "shapeValue",
+            "printedName": "shapeValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PoolShape",
+                "printedName": "WYBOTFramework.PoolShape",
+                "usr": "s:14WYBOTFramework9PoolShapeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework4PoolV10shapeValueAA0B5ShapeOvp",
+            "mangledName": "$s14WYBOTFramework4PoolV10shapeValueAA0B5ShapeOvp",
+            "moduleName": "WYBOTFramework",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PoolShape",
+                    "printedName": "WYBOTFramework.PoolShape",
+                    "usr": "s:14WYBOTFramework9PoolShapeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework4PoolV10shapeValueAA0B5ShapeOvg",
+                "mangledName": "$s14WYBOTFramework4PoolV10shapeValueAA0B5ShapeOvg",
+                "moduleName": "WYBOTFramework",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "slopeValue",
+            "printedName": "slopeValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PoolSlope",
+                "printedName": "WYBOTFramework.PoolSlope",
+                "usr": "s:14WYBOTFramework9PoolSlopeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework4PoolV10slopeValueAA0B5SlopeOvp",
+            "mangledName": "$s14WYBOTFramework4PoolV10slopeValueAA0B5SlopeOvp",
+            "moduleName": "WYBOTFramework",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PoolSlope",
+                    "printedName": "WYBOTFramework.PoolSlope",
+                    "usr": "s:14WYBOTFramework9PoolSlopeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework4PoolV10slopeValueAA0B5SlopeOvg",
+                "mangledName": "$s14WYBOTFramework4PoolV10slopeValueAA0B5SlopeOvg",
+                "moduleName": "WYBOTFramework",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "materialValue",
+            "printedName": "materialValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PoolMaterial",
+                "printedName": "WYBOTFramework.PoolMaterial",
+                "usr": "s:14WYBOTFramework12PoolMaterialO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework4PoolV13materialValueAA0B8MaterialOvp",
+            "mangledName": "$s14WYBOTFramework4PoolV13materialValueAA0B8MaterialOvp",
+            "moduleName": "WYBOTFramework",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PoolMaterial",
+                    "printedName": "WYBOTFramework.PoolMaterial",
+                    "usr": "s:14WYBOTFramework12PoolMaterialO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework4PoolV13materialValueAA0B8MaterialOvg",
+                "mangledName": "$s14WYBOTFramework4PoolV13materialValueAA0B8MaterialOvg",
+                "moduleName": "WYBOTFramework",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -18063,6 +18209,166 @@
             "moduleName": "WYBOTFramework"
           },
           {
+            "kind": "Var",
+            "name": "_id",
+            "printedName": "_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework9PoolShapeO3_idSivp",
+            "mangledName": "$s14WYBOTFramework9PoolShapeO3_idSivp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework9PoolShapeO3_idSivg",
+                "mangledName": "$s14WYBOTFramework9PoolShapeO3_idSivg",
+                "moduleName": "WYBOTFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_type",
+            "printedName": "_type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DataPointType",
+                "printedName": "WYBOTFramework.DataPointType",
+                "usr": "s:14WYBOTFramework13DataPointTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework9PoolShapeO5_typeAA13DataPointTypeOvp",
+            "mangledName": "$s14WYBOTFramework9PoolShapeO5_typeAA13DataPointTypeOvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataPointType",
+                    "printedName": "WYBOTFramework.DataPointType",
+                    "usr": "s:14WYBOTFramework13DataPointTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework9PoolShapeO5_typeAA13DataPointTypeOvg",
+                "mangledName": "$s14WYBOTFramework9PoolShapeO5_typeAA13DataPointTypeOvg",
+                "moduleName": "WYBOTFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_len",
+            "printedName": "_len",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework9PoolShapeO4_lenSivp",
+            "mangledName": "$s14WYBOTFramework9PoolShapeO4_lenSivp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework9PoolShapeO4_lenSivg",
+                "mangledName": "$s14WYBOTFramework9PoolShapeO4_lenSivg",
+                "moduleName": "WYBOTFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_data",
+            "printedName": "_data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework9PoolShapeO5_dataSSvp",
+            "mangledName": "$s14WYBOTFramework9PoolShapeO5_dataSSvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework9PoolShapeO5_dataSSvg",
+                "mangledName": "$s14WYBOTFramework9PoolShapeO5_dataSSvg",
+                "moduleName": "WYBOTFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -18194,6 +18500,20 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "WYDataPointPotocal",
+            "printedName": "WYDataPointPotocal",
+            "usr": "s:14WYBOTFramework18WYDataPointPotocalP",
+            "mangledName": "$s14WYBOTFramework18WYDataPointPotocalP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -18312,6 +18632,166 @@
             "usr": "s:14WYBOTFramework9PoolSlopeO6hopperyA2CmF",
             "mangledName": "$s14WYBOTFramework9PoolSlopeO6hopperyA2CmF",
             "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "_id",
+            "printedName": "_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework9PoolSlopeO3_idSivp",
+            "mangledName": "$s14WYBOTFramework9PoolSlopeO3_idSivp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework9PoolSlopeO3_idSivg",
+                "mangledName": "$s14WYBOTFramework9PoolSlopeO3_idSivg",
+                "moduleName": "WYBOTFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_type",
+            "printedName": "_type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DataPointType",
+                "printedName": "WYBOTFramework.DataPointType",
+                "usr": "s:14WYBOTFramework13DataPointTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework9PoolSlopeO5_typeAA13DataPointTypeOvp",
+            "mangledName": "$s14WYBOTFramework9PoolSlopeO5_typeAA13DataPointTypeOvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataPointType",
+                    "printedName": "WYBOTFramework.DataPointType",
+                    "usr": "s:14WYBOTFramework13DataPointTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework9PoolSlopeO5_typeAA13DataPointTypeOvg",
+                "mangledName": "$s14WYBOTFramework9PoolSlopeO5_typeAA13DataPointTypeOvg",
+                "moduleName": "WYBOTFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_len",
+            "printedName": "_len",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework9PoolSlopeO4_lenSivp",
+            "mangledName": "$s14WYBOTFramework9PoolSlopeO4_lenSivp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework9PoolSlopeO4_lenSivg",
+                "mangledName": "$s14WYBOTFramework9PoolSlopeO4_lenSivg",
+                "moduleName": "WYBOTFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_data",
+            "printedName": "_data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework9PoolSlopeO5_dataSSvp",
+            "mangledName": "$s14WYBOTFramework9PoolSlopeO5_dataSSvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework9PoolSlopeO5_dataSSvg",
+                "mangledName": "$s14WYBOTFramework9PoolSlopeO5_dataSSvg",
+                "moduleName": "WYBOTFramework",
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Constructor",
@@ -18445,6 +18925,20 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "WYDataPointPotocal",
+            "printedName": "WYDataPointPotocal",
+            "usr": "s:14WYBOTFramework18WYDataPointPotocalP",
+            "mangledName": "$s14WYBOTFramework18WYDataPointPotocalP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -18602,6 +19096,166 @@
             "moduleName": "WYBOTFramework"
           },
           {
+            "kind": "Var",
+            "name": "_id",
+            "printedName": "_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework12PoolMaterialO3_idSivp",
+            "mangledName": "$s14WYBOTFramework12PoolMaterialO3_idSivp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework12PoolMaterialO3_idSivg",
+                "mangledName": "$s14WYBOTFramework12PoolMaterialO3_idSivg",
+                "moduleName": "WYBOTFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_type",
+            "printedName": "_type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DataPointType",
+                "printedName": "WYBOTFramework.DataPointType",
+                "usr": "s:14WYBOTFramework13DataPointTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework12PoolMaterialO5_typeAA13DataPointTypeOvp",
+            "mangledName": "$s14WYBOTFramework12PoolMaterialO5_typeAA13DataPointTypeOvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataPointType",
+                    "printedName": "WYBOTFramework.DataPointType",
+                    "usr": "s:14WYBOTFramework13DataPointTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework12PoolMaterialO5_typeAA13DataPointTypeOvg",
+                "mangledName": "$s14WYBOTFramework12PoolMaterialO5_typeAA13DataPointTypeOvg",
+                "moduleName": "WYBOTFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_len",
+            "printedName": "_len",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework12PoolMaterialO4_lenSivp",
+            "mangledName": "$s14WYBOTFramework12PoolMaterialO4_lenSivp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework12PoolMaterialO4_lenSivg",
+                "mangledName": "$s14WYBOTFramework12PoolMaterialO4_lenSivg",
+                "moduleName": "WYBOTFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_data",
+            "printedName": "_data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework12PoolMaterialO5_dataSSvp",
+            "mangledName": "$s14WYBOTFramework12PoolMaterialO5_dataSSvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework12PoolMaterialO5_dataSSvg",
+                "mangledName": "$s14WYBOTFramework12PoolMaterialO5_dataSSvg",
+                "moduleName": "WYBOTFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -18733,6 +19387,20 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "WYDataPointPotocal",
+            "printedName": "WYDataPointPotocal",
+            "usr": "s:14WYBOTFramework18WYDataPointPotocalP",
+            "mangledName": "$s14WYBOTFramework18WYDataPointPotocalP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -19582,9 +20250,341 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "cleanDuration",
+            "printedName": "cleanDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework10WYWeekPlanV13cleanDurationSiSgvp",
+            "mangledName": "$s14WYBOTFramework10WYWeekPlanV13cleanDurationSiSgvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework10WYWeekPlanV13cleanDurationSiSgvg",
+                "mangledName": "$s14WYBOTFramework10WYWeekPlanV13cleanDurationSiSgvg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework10WYWeekPlanV13cleanDurationSiSgvs",
+                "mangledName": "$s14WYBOTFramework10WYWeekPlanV13cleanDurationSiSgvs",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework10WYWeekPlanV13cleanDurationSiSgvM",
+                "mangledName": "$s14WYBOTFramework10WYWeekPlanV13cleanDurationSiSgvM",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cleanMode",
+            "printedName": "cleanMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WYBOTFramework.WYCleanMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WYCleanMode",
+                    "printedName": "WYBOTFramework.WYCleanMode",
+                    "usr": "s:14WYBOTFramework11WYCleanModeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework10WYWeekPlanV9cleanModeAA07WYCleanE0OSgvp",
+            "mangledName": "$s14WYBOTFramework10WYWeekPlanV9cleanModeAA07WYCleanE0OSgvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WYBOTFramework.WYCleanMode?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WYCleanMode",
+                        "printedName": "WYBOTFramework.WYCleanMode",
+                        "usr": "s:14WYBOTFramework11WYCleanModeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework10WYWeekPlanV9cleanModeAA07WYCleanE0OSgvg",
+                "mangledName": "$s14WYBOTFramework10WYWeekPlanV9cleanModeAA07WYCleanE0OSgvg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WYBOTFramework.WYCleanMode?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WYCleanMode",
+                        "printedName": "WYBOTFramework.WYCleanMode",
+                        "usr": "s:14WYBOTFramework11WYCleanModeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework10WYWeekPlanV9cleanModeAA07WYCleanE0OSgvs",
+                "mangledName": "$s14WYBOTFramework10WYWeekPlanV9cleanModeAA07WYCleanE0OSgvs",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework10WYWeekPlanV9cleanModeAA07WYCleanE0OSgvM",
+                "mangledName": "$s14WYBOTFramework10WYWeekPlanV9cleanModeAA07WYCleanE0OSgvM",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endDateTime",
+            "printedName": "endDateTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework10WYWeekPlanV11endDateTime10Foundation0E0VSgvp",
+            "mangledName": "$s14WYBOTFramework10WYWeekPlanV11endDateTime10Foundation0E0VSgvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework10WYWeekPlanV11endDateTime10Foundation0E0VSgvg",
+                "mangledName": "$s14WYBOTFramework10WYWeekPlanV11endDateTime10Foundation0E0VSgvg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework10WYWeekPlanV11endDateTime10Foundation0E0VSgvs",
+                "mangledName": "$s14WYBOTFramework10WYWeekPlanV11endDateTime10Foundation0E0VSgvs",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework10WYWeekPlanV11endDateTime10Foundation0E0VSgvM",
+                "mangledName": "$s14WYBOTFramework10WYWeekPlanV11endDateTime10Foundation0E0VSgvM",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(id:weekday:timeString:scheduled:)",
+            "printedName": "init(id:weekday:timeString:scheduled:cleanDuration:cleanMode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19617,14 +20617,45 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WYBOTFramework.WYCleanMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WYCleanMode",
+                    "printedName": "WYBOTFramework.WYCleanMode",
+                    "usr": "s:14WYBOTFramework11WYCleanModeO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14WYBOTFramework10WYWeekPlanV2id7weekday10timeString9scheduledAC10Foundation4UUIDV_SiAH4DateVSbtcfc",
-            "mangledName": "$s14WYBOTFramework10WYWeekPlanV2id7weekday10timeString9scheduledAC10Foundation4UUIDV_SiAH4DateVSbtcfc",
+            "usr": "s:14WYBOTFramework10WYWeekPlanV2id7weekday10timeString9scheduled13cleanDuration0I4ModeAC10Foundation4UUIDV_SiAJ4DateVSbSiSgAA07WYCleanK0OSgtcfc",
+            "mangledName": "$s14WYBOTFramework10WYWeekPlanV2id7weekday10timeString9scheduled13cleanDuration0I4ModeAC10Foundation4UUIDV_SiAJ4DateVSbSiSgAA07WYCleanK0OSgtcfc",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -19732,6 +20763,13 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -31496,6 +32534,528 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "WYDataPointPotocal",
+        "printedName": "WYDataPointPotocal",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "_id",
+            "printedName": "_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework18WYDataPointPotocalP3_idSivp",
+            "mangledName": "$s14WYBOTFramework18WYDataPointPotocalP3_idSivp",
+            "moduleName": "WYBOTFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework18WYDataPointPotocalP3_idSivg",
+                "mangledName": "$s14WYBOTFramework18WYDataPointPotocalP3_idSivg",
+                "moduleName": "WYBOTFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : WYBOTFramework.WYDataPointPotocal>",
+                "sugared_genericSig": "<Self where Self : WYBOTFramework.WYDataPointPotocal>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_type",
+            "printedName": "_type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DataPointType",
+                "printedName": "WYBOTFramework.DataPointType",
+                "usr": "s:14WYBOTFramework13DataPointTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework18WYDataPointPotocalP5_typeAA04DataC4TypeOvp",
+            "mangledName": "$s14WYBOTFramework18WYDataPointPotocalP5_typeAA04DataC4TypeOvp",
+            "moduleName": "WYBOTFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataPointType",
+                    "printedName": "WYBOTFramework.DataPointType",
+                    "usr": "s:14WYBOTFramework13DataPointTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework18WYDataPointPotocalP5_typeAA04DataC4TypeOvg",
+                "mangledName": "$s14WYBOTFramework18WYDataPointPotocalP5_typeAA04DataC4TypeOvg",
+                "moduleName": "WYBOTFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : WYBOTFramework.WYDataPointPotocal>",
+                "sugared_genericSig": "<Self where Self : WYBOTFramework.WYDataPointPotocal>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_len",
+            "printedName": "_len",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework18WYDataPointPotocalP4_lenSivp",
+            "mangledName": "$s14WYBOTFramework18WYDataPointPotocalP4_lenSivp",
+            "moduleName": "WYBOTFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework18WYDataPointPotocalP4_lenSivg",
+                "mangledName": "$s14WYBOTFramework18WYDataPointPotocalP4_lenSivg",
+                "moduleName": "WYBOTFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : WYBOTFramework.WYDataPointPotocal>",
+                "sugared_genericSig": "<Self where Self : WYBOTFramework.WYDataPointPotocal>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_data",
+            "printedName": "_data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework18WYDataPointPotocalP5_dataSSvp",
+            "mangledName": "$s14WYBOTFramework18WYDataPointPotocalP5_dataSSvp",
+            "moduleName": "WYBOTFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework18WYDataPointPotocalP5_dataSSvg",
+                "mangledName": "$s14WYBOTFramework18WYDataPointPotocalP5_dataSSvg",
+                "moduleName": "WYBOTFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : WYBOTFramework.WYDataPointPotocal>",
+                "sugared_genericSig": "<Self where Self : WYBOTFramework.WYDataPointPotocal>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:14WYBOTFramework18WYDataPointPotocalP",
+        "mangledName": "$s14WYBOTFramework18WYDataPointPotocalP",
+        "moduleName": "WYBOTFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DataPointType",
+        "printedName": "DataPointType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "raw",
+            "printedName": "raw",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.DataPointType.Type) -> WYBOTFramework.DataPointType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataPointType",
+                    "printedName": "WYBOTFramework.DataPointType",
+                    "usr": "s:14WYBOTFramework13DataPointTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.DataPointType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataPointType",
+                        "printedName": "WYBOTFramework.DataPointType",
+                        "usr": "s:14WYBOTFramework13DataPointTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework13DataPointTypeO3rawyA2CmF",
+            "mangledName": "$s14WYBOTFramework13DataPointTypeO3rawyA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "bool",
+            "printedName": "bool",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.DataPointType.Type) -> WYBOTFramework.DataPointType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataPointType",
+                    "printedName": "WYBOTFramework.DataPointType",
+                    "usr": "s:14WYBOTFramework13DataPointTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.DataPointType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataPointType",
+                        "printedName": "WYBOTFramework.DataPointType",
+                        "usr": "s:14WYBOTFramework13DataPointTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework13DataPointTypeO4boolyA2CmF",
+            "mangledName": "$s14WYBOTFramework13DataPointTypeO4boolyA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "number",
+            "printedName": "number",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.DataPointType.Type) -> WYBOTFramework.DataPointType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataPointType",
+                    "printedName": "WYBOTFramework.DataPointType",
+                    "usr": "s:14WYBOTFramework13DataPointTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.DataPointType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataPointType",
+                        "printedName": "WYBOTFramework.DataPointType",
+                        "usr": "s:14WYBOTFramework13DataPointTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework13DataPointTypeO6numberyA2CmF",
+            "mangledName": "$s14WYBOTFramework13DataPointTypeO6numberyA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "enum",
+            "printedName": "enum",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.DataPointType.Type) -> WYBOTFramework.DataPointType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataPointType",
+                    "printedName": "WYBOTFramework.DataPointType",
+                    "usr": "s:14WYBOTFramework13DataPointTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.DataPointType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataPointType",
+                        "printedName": "WYBOTFramework.DataPointType",
+                        "usr": "s:14WYBOTFramework13DataPointTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework13DataPointTypeO4enumyA2CmF",
+            "mangledName": "$s14WYBOTFramework13DataPointTypeO4enumyA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "bitmap",
+            "printedName": "bitmap",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WYBOTFramework.DataPointType.Type) -> WYBOTFramework.DataPointType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataPointType",
+                    "printedName": "WYBOTFramework.DataPointType",
+                    "usr": "s:14WYBOTFramework13DataPointTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WYBOTFramework.DataPointType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataPointType",
+                        "printedName": "WYBOTFramework.DataPointType",
+                        "usr": "s:14WYBOTFramework13DataPointTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14WYBOTFramework13DataPointTypeO6bitmapyA2CmF",
+            "mangledName": "$s14WYBOTFramework13DataPointTypeO6bitmapyA2CmF",
+            "moduleName": "WYBOTFramework"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WYBOTFramework.DataPointType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataPointType",
+                    "printedName": "WYBOTFramework.DataPointType",
+                    "usr": "s:14WYBOTFramework13DataPointTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14WYBOTFramework13DataPointTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s14WYBOTFramework13DataPointTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "WYBOTFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework13DataPointTypeO8rawValueSivp",
+            "mangledName": "$s14WYBOTFramework13DataPointTypeO8rawValueSivp",
+            "moduleName": "WYBOTFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework13DataPointTypeO8rawValueSivg",
+                "mangledName": "$s14WYBOTFramework13DataPointTypeO8rawValueSivg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14WYBOTFramework13DataPointTypeO",
+        "mangledName": "$s14WYBOTFramework13DataPointTypeO",
+        "moduleName": "WYBOTFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -37091,14 +38651,14 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 58219,
+      "offset": 59385,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 58348,
+      "offset": 59514,
       "length": 1,
       "value": "1"
     },
@@ -37350,413 +38910,420 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 1010,
+      "offset": 143,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
       "kind": "StringLiteral",
-      "offset": 1384,
+      "offset": 610,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 2483,
+      "offset": 812,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2074,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 141,
+      "offset": 142,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 156,
+      "offset": 160,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 172,
+      "offset": 179,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 187,
+      "offset": 197,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 207,
+      "offset": 220,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 226,
+      "offset": 242,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 244,
+      "offset": 263,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 262,
+      "offset": 284,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 276,
+      "offset": 301,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 295,
+      "offset": 323,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 312,
+      "offset": 343,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 376,
+      "offset": 407,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 387,
+      "offset": 418,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 401,
+      "offset": 432,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 416,
+      "offset": 447,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 430,
+      "offset": 461,
       "length": 9,
       "value": "4"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 449,
+      "offset": 480,
       "length": 6,
       "value": "5"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 465,
+      "offset": 496,
       "length": 3,
       "value": "6"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 478,
+      "offset": 509,
       "length": 11,
       "value": "7"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 499,
+      "offset": 530,
       "length": 4,
       "value": "8"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 513,
+      "offset": 544,
       "length": 15,
       "value": "9"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 538,
+      "offset": 569,
       "length": 4,
       "value": "10"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 552,
+      "offset": 583,
       "length": 4,
       "value": "11"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 566,
+      "offset": 597,
       "length": 4,
       "value": "12"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 580,
+      "offset": 611,
       "length": 4,
       "value": "13"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 594,
+      "offset": 625,
       "length": 8,
       "value": "14"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 612,
+      "offset": 643,
       "length": 11,
       "value": "15"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 633,
+      "offset": 664,
       "length": 4,
       "value": "16"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 2651,
+      "offset": 2685,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 2659,
+      "offset": 2696,
       "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 2674,
+      "offset": 2714,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 2688,
+      "offset": 2731,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 3055,
+      "offset": 3125,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 3968,
+      "offset": 4226,
       "length": 8,
       "value": "\"poolId\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 3991,
+      "offset": 4255,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 4013,
+      "offset": 4283,
       "length": 7,
       "value": "\"shape\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 4036,
+      "offset": 4312,
       "length": 7,
       "value": "\"slope\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "StringLiteral",
-      "offset": 4062,
+      "offset": 4344,
       "length": 10,
       "value": "\"material\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4411,
+      "offset": 5082,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4427,
+      "offset": 5101,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4447,
+      "offset": 5124,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4573,
+      "offset": 5509,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4588,
+      "offset": 5527,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4605,
+      "offset": 5547,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4732,
+      "offset": 5933,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4751,
+      "offset": 5955,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4768,
+      "offset": 5975,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4784,
+      "offset": 5994,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4956,
+      "offset": 6418,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4972,
+      "offset": 6437,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 4986,
+      "offset": 6454,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 5000,
+      "offset": 6471,
       "length": 3,
       "value": "127"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 5057,
+      "offset": 6531,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 5074,
+      "offset": 6551,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "IntegerLiteral",
-      "offset": 5092,
+      "offset": 6572,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
       "kind": "BooleanLiteral",
-      "offset": 5260,
+      "offset": 6762,
       "length": 5,
       "value": "false"
     },
@@ -38144,6 +39711,41 @@
       "offset": 8885,
       "length": 91,
       "value": "[\"1.127.0\", \"5.127.0\", \"9.127.0\", \"6.127.0\"]"
+    },
+    {
+      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDataPotocal.swift",
+      "kind": "IntegerLiteral",
+      "offset": 425,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDataPotocal.swift",
+      "kind": "IntegerLiteral",
+      "offset": 443,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDataPotocal.swift",
+      "kind": "IntegerLiteral",
+      "offset": 463,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDataPotocal.swift",
+      "kind": "IntegerLiteral",
+      "offset": 483,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDataPotocal.swift",
+      "kind": "IntegerLiteral",
+      "offset": 503,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYNotificationName.swift",
