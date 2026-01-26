@@ -459,6 +459,8 @@ public struct UpdatingErrorInfo : Swift.Codable {
   final public func updateFirmware(deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<Swift.Int, any Swift.Error>
   final public func setBoatAutoCleaning(isOn: Swift.Bool, deviceId: Swift.String) async throws -> Swift.Bool
   final public func checkBoatAutoCleaning(for deviceId: Swift.String) async throws -> Swift.Bool
+  final public func setPowerSavingMode(isOn: Swift.Bool, deviceId: Swift.String) async throws -> Swift.Bool
+  final public func checkPowerSavingMode(for deviceId: Swift.String) async throws -> Swift.Bool
   final public func fetchBoatStreamStatus(_ deviceId: Swift.String) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.BleStreamData, any Swift.Error>
   @objc deinit
 }

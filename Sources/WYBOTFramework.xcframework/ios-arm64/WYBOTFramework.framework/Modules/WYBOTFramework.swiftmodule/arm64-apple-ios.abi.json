@@ -10607,6 +10607,70 @@
           },
           {
             "kind": "Function",
+            "name": "setPowerSavingMode",
+            "printedName": "setPowerSavingMode(isOn:deviceId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework5WYLibC18setPowerSavingMode4isOn8deviceIdS2b_SStYaKF",
+            "mangledName": "$s14WYBOTFramework5WYLibC18setPowerSavingMode4isOn8deviceIdS2b_SStYaKF",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkPowerSavingMode",
+            "printedName": "checkPowerSavingMode(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework5WYLibC20checkPowerSavingMode3forSbSS_tYaKF",
+            "mangledName": "$s14WYBOTFramework5WYLibC20checkPowerSavingMode3forSbSS_tYaKF",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "fetchBoatStreamStatus",
             "printedName": "fetchBoatStreamStatus(_:)",
             "children": [
@@ -38840,35 +38904,35 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "BooleanLiteral",
-      "offset": 2380,
+      "offset": 2447,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "BooleanLiteral",
-      "offset": 2423,
+      "offset": 2490,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "Array",
-      "offset": 2458,
+      "offset": 2525,
       "length": 24,
       "value": "[\"dreame-x13b348t\"]"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 59646,
+      "offset": 59713,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 59775,
+      "offset": 59842,
       "length": 1,
       "value": "1"
     },
@@ -39996,55 +40060,55 @@
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "BooleanLiteral",
       "offset": 121,
-      "length": 4,
-      "value": "true"
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 208,
+      "offset": 209,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 862,
+      "offset": 853,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 1454,
+      "offset": 1435,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 1929,
+      "offset": 1900,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 3056,
+      "offset": 3017,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 4112,
+      "offset": 4047,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/FormattedPrint\/WYPrint.swift",
       "kind": "StringLiteral",
-      "offset": 4959,
+      "offset": 4877,
       "length": 2,
       "value": "\"\""
     },
