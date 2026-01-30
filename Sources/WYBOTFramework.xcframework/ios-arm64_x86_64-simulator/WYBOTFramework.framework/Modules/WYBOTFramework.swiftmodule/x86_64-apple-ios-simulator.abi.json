@@ -8908,46 +8908,6 @@
           },
           {
             "kind": "Function",
-            "name": "update",
-            "printedName": "update(device:for:with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ScanDevice",
-                "printedName": "WYBOTFramework.ScanDevice",
-                "usr": "s:14WYBOTFramework10ScanDeviceV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WYUnit",
-                "printedName": "WYBOTFramework.WYUnit",
-                "usr": "s:14WYBOTFramework6WYUnitO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14WYBOTFramework5WYLibC6update6device3for4withyAA10ScanDeviceV_AA6WYUnitO10Foundation4DataVtF",
-            "mangledName": "$s14WYBOTFramework5WYLibC6update6device3for4withyAA10ScanDeviceV_AA6WYUnitO10Foundation4DataVtF",
-            "moduleName": "WYBOTFramework",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "batteryInfo",
             "printedName": "batteryInfo(for:with:)",
             "children": [
@@ -22918,176 +22878,6 @@
           },
           {
             "kind": "Var",
-            "name": "model",
-            "printedName": "model",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14WYBOTFramework10ScanDeviceV5modelSSvp",
-            "mangledName": "$s14WYBOTFramework10ScanDeviceV5modelSSvp",
-            "moduleName": "WYBOTFramework",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework10ScanDeviceV5modelSSvg",
-                "mangledName": "$s14WYBOTFramework10ScanDeviceV5modelSSvg",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework10ScanDeviceV5modelSSvs",
-                "mangledName": "$s14WYBOTFramework10ScanDeviceV5modelSSvs",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework10ScanDeviceV5modelSSvM",
-                "mangledName": "$s14WYBOTFramework10ScanDeviceV5modelSSvM",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14WYBOTFramework10ScanDeviceV4nameSSvp",
-            "mangledName": "$s14WYBOTFramework10ScanDeviceV4nameSSvp",
-            "moduleName": "WYBOTFramework",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework10ScanDeviceV4nameSSvg",
-                "mangledName": "$s14WYBOTFramework10ScanDeviceV4nameSSvg",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework10ScanDeviceV4nameSSvs",
-                "mangledName": "$s14WYBOTFramework10ScanDeviceV4nameSSvs",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework10ScanDeviceV4nameSSvM",
-                "mangledName": "$s14WYBOTFramework10ScanDeviceV4nameSSvM",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "type",
             "printedName": "type",
             "children": [
@@ -23106,6 +22896,7 @@
               "HasStorage",
               "AccessControl"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -23126,17 +22917,37 @@
                 "moduleName": "WYBOTFramework",
                 "implicit": true,
                 "accessorKind": "get"
-              },
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mac",
+            "printedName": "mac",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework10ScanDeviceV3macSSvp",
+            "mangledName": "$s14WYBOTFramework10ScanDeviceV3macSSvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
               {
                 "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
+                "name": "Get",
+                "printedName": "Get()",
                 "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
                   {
                     "kind": "TypeNominal",
                     "name": "String",
@@ -23145,29 +22956,55 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework10ScanDeviceV4typeSSvs",
-                "mangledName": "$s14WYBOTFramework10ScanDeviceV4typeSSvs",
+                "usr": "s:14WYBOTFramework10ScanDeviceV3macSSvg",
+                "mangledName": "$s14WYBOTFramework10ScanDeviceV3macSSvg",
                 "moduleName": "WYBOTFramework",
                 "implicit": true,
-                "accessorKind": "set"
-              },
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "advDataLocalName",
+            "printedName": "advDataLocalName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework10ScanDeviceV16advDataLocalNameSSvp",
+            "mangledName": "$s14WYBOTFramework10ScanDeviceV16advDataLocalNameSSvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
               {
                 "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
+                "name": "Get",
+                "printedName": "Get()",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework10ScanDeviceV4typeSSvM",
-                "mangledName": "$s14WYBOTFramework10ScanDeviceV4typeSSvM",
+                "usr": "s:14WYBOTFramework10ScanDeviceV16advDataLocalNameSSvg",
+                "mangledName": "$s14WYBOTFramework10ScanDeviceV16advDataLocalNameSSvg",
                 "moduleName": "WYBOTFramework",
                 "implicit": true,
-                "accessorKind": "_modify"
+                "accessorKind": "get"
               }
             ]
           },
@@ -23258,51 +23095,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(peripheral:rssi:name:model:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ScanDevice",
-                "printedName": "WYBOTFramework.ScanDevice",
-                "usr": "s:14WYBOTFramework10ScanDeviceV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CBPeripheral",
-                "printedName": "CoreBluetooth.CBPeripheral",
-                "usr": "c:objc(cs)CBPeripheral"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:14WYBOTFramework10ScanDeviceV10peripheral4rssi4name5modelACSo12CBPeripheralC_SiS2Stcfc",
-            "mangledName": "$s14WYBOTFramework10ScanDeviceV10peripheral4rssi4name5modelACSo12CBPeripheralC_SiS2Stcfc",
-            "moduleName": "WYBOTFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
           },
           {
             "kind": "Function",
@@ -33700,22 +33492,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:So12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSSgvp",
-            "mangledName": "$sSo12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSSgvp",
+            "usr": "s:So12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSvp",
+            "mangledName": "$sSo12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSvp",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
               "RawDocComment"
@@ -33729,22 +33513,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:So12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSSgvg",
-                "mangledName": "$sSo12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSSgvg",
+                "usr": "s:So12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSvg",
+                "mangledName": "$sSo12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSvg",
                 "moduleName": "WYBOTFramework",
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -33761,22 +33537,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:So12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSSgvs",
-                "mangledName": "$sSo12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSSgvs",
+                "usr": "s:So12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSvs",
+                "mangledName": "$sSo12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSvs",
                 "moduleName": "WYBOTFramework",
                 "isFromExtension": true,
                 "accessorKind": "set"
@@ -33793,8 +33561,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:So12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSSgvM",
-                "mangledName": "$sSo12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSSgvM",
+                "usr": "s:So12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSvM",
+                "mangledName": "$sSo12CBPeripheralC14WYBOTFrameworkE16advDataLocalNameSSvM",
                 "moduleName": "WYBOTFramework",
                 "implicit": true,
                 "intro_iOS": "5.0",
@@ -38925,14 +38693,14 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 59713,
+      "offset": 59914,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 59842,
+      "offset": 60043,
       "length": 1,
       "value": "1"
     },

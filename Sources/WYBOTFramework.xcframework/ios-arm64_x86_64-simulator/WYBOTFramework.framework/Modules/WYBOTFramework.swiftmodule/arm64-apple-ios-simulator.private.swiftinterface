@@ -15,7 +15,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 extension CoreBluetooth.CBPeripheral {
-  public var advDataLocalName: Swift.String? {
+  public var advDataLocalName: Swift.String {
     get
     set
   }
@@ -409,7 +409,6 @@ public struct UpdatingErrorInfo : Swift.Codable {
   final public func devicePowerUnit() async throws -> WYBOTFramework.Device
   final public func searchWiFi() async throws -> [WYBOTFramework.WYWifiInfo]
   final public func setWiFi(_ ssid: Swift.String, password: Swift.String) async throws -> Swift.Bool
-  final public func update(device: WYBOTFramework.ScanDevice, for unit: WYBOTFramework.WYUnit, with firmware: Foundation.Data)
   final public func batteryInfo(for deviceId: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.RobotBatteryData
   final public func batteryInfo() async throws -> WYBOTFramework.RobotBatteryData
   final public func setCleanMode(_ mode: WYBOTFramework.WYCleanMode, to device: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.WYCleanMode
@@ -862,12 +861,11 @@ public struct ResponseEmpty : WYBOTFramework.CodableDefaultValue {
 }
 public struct ScanDevice : Swift.Equatable, Swift.Identifiable {
   public let id: Foundation.UUID
-  public var model: Swift.String
-  public var name: Swift.String
-  public var type: Swift.String
+  public let type: Swift.String
+  public let mac: Swift.String
+  public let advDataLocalName: Swift.String
   public let peripheral: CoreBluetooth.CBPeripheral
   public let rssi: Swift.Int
-  public init(peripheral: CoreBluetooth.CBPeripheral, rssi: Swift.Int, name: Swift.String, model: Swift.String)
   public static func == (a: WYBOTFramework.ScanDevice, b: WYBOTFramework.ScanDevice) -> Swift.Bool
   public typealias ID = Foundation.UUID
 }
