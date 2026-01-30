@@ -8668,13 +8668,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "AsyncThrowingStream",
-                "printedName": "_Concurrency.AsyncThrowingStream<WYBOTFramework.DeviceWifiStatus, any Swift.Error>",
+                "printedName": "_Concurrency.AsyncThrowingStream<WYBOTFramework.Device, any Swift.Error>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "DeviceWifiStatus",
-                    "printedName": "WYBOTFramework.DeviceWifiStatus",
-                    "usr": "s:14WYBOTFramework16DeviceWifiStatusV"
+                    "name": "Device",
+                    "printedName": "WYBOTFramework.Device",
+                    "usr": "s:14WYBOTFramework6DeviceV"
                   },
                   {
                     "kind": "TypeNominal",
@@ -8701,8 +8701,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14WYBOTFramework5WYLibC22refreshDevicesWanStateyScsyAA16DeviceWifiStatusVs5Error_pGSayAA0G0VGYaKF",
-            "mangledName": "$s14WYBOTFramework5WYLibC22refreshDevicesWanStateyScsyAA16DeviceWifiStatusVs5Error_pGSayAA0G0VGYaKF",
+            "usr": "s:14WYBOTFramework5WYLibC22refreshDevicesWanStateyScsyAA6DeviceVs5Error_pGSayAFGYaKF",
+            "mangledName": "$s14WYBOTFramework5WYLibC22refreshDevicesWanStateyScsyAA6DeviceVs5Error_pGSayAFGYaKF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
               "Final",
@@ -23097,6 +23097,50 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework10ScanDeviceV4nameSSvp",
+            "mangledName": "$s14WYBOTFramework10ScanDeviceV4nameSSvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework10ScanDeviceV4nameSSvg",
+                "mangledName": "$s14WYBOTFramework10ScanDeviceV4nameSSvg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -30012,298 +30056,6 @@
         "moduleName": "WYBOTFramework",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "DeviceWifiStatus",
-        "printedName": "DeviceWifiStatus",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "deviceId",
-            "printedName": "deviceId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14WYBOTFramework16DeviceWifiStatusV8deviceIdSSvp",
-            "mangledName": "$s14WYBOTFramework16DeviceWifiStatusV8deviceIdSSvp",
-            "moduleName": "WYBOTFramework",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework16DeviceWifiStatusV8deviceIdSSvg",
-                "mangledName": "$s14WYBOTFramework16DeviceWifiStatusV8deviceIdSSvg",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "wifiState",
-            "printedName": "wifiState",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14WYBOTFramework16DeviceWifiStatusV9wifiStateSbvp",
-            "mangledName": "$s14WYBOTFramework16DeviceWifiStatusV9wifiStateSbvp",
-            "moduleName": "WYBOTFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework16DeviceWifiStatusV9wifiStateSbvg",
-                "mangledName": "$s14WYBOTFramework16DeviceWifiStatusV9wifiStateSbvg",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework16DeviceWifiStatusV9wifiStateSbvs",
-                "mangledName": "$s14WYBOTFramework16DeviceWifiStatusV9wifiStateSbvs",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework16DeviceWifiStatusV9wifiStateSbvM",
-                "mangledName": "$s14WYBOTFramework16DeviceWifiStatusV9wifiStateSbvM",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "hasNewVersion",
-            "printedName": "hasNewVersion",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14WYBOTFramework16DeviceWifiStatusV13hasNewVersionSbvp",
-            "mangledName": "$s14WYBOTFramework16DeviceWifiStatusV13hasNewVersionSbvp",
-            "moduleName": "WYBOTFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework16DeviceWifiStatusV13hasNewVersionSbvg",
-                "mangledName": "$s14WYBOTFramework16DeviceWifiStatusV13hasNewVersionSbvg",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework16DeviceWifiStatusV13hasNewVersionSbvs",
-                "mangledName": "$s14WYBOTFramework16DeviceWifiStatusV13hasNewVersionSbvs",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14WYBOTFramework16DeviceWifiStatusV13hasNewVersionSbvM",
-                "mangledName": "$s14WYBOTFramework16DeviceWifiStatusV13hasNewVersionSbvM",
-                "moduleName": "WYBOTFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DeviceWifiStatus",
-                "printedName": "WYBOTFramework.DeviceWifiStatus",
-                "usr": "s:14WYBOTFramework16DeviceWifiStatusV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DeviceWifiStatus",
-                "printedName": "WYBOTFramework.DeviceWifiStatus",
-                "usr": "s:14WYBOTFramework16DeviceWifiStatusV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14WYBOTFramework16DeviceWifiStatusV2eeoiySbAC_ACtFZ",
-            "mangledName": "$s14WYBOTFramework16DeviceWifiStatusV2eeoiySbAC_ACtFZ",
-            "moduleName": "WYBOTFramework",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:14WYBOTFramework16DeviceWifiStatusV",
-        "mangledName": "$s14WYBOTFramework16DeviceWifiStatusV",
-        "moduleName": "WYBOTFramework",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          }
         ]
       },
       {
@@ -38995,14 +38747,14 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 59879,
+      "offset": 59869,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 60008,
+      "offset": 59998,
       "length": 1,
       "value": "1"
     },
@@ -39968,58 +39720,44 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "BooleanLiteral",
-      "offset": 904,
+      "offset": 894,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 1659,
+      "offset": 1649,
       "length": 6,
       "value": "\"iWY-\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "IntegerLiteral",
-      "offset": 1697,
+      "offset": 1687,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 1770,
+      "offset": 1760,
       "length": 12,
       "value": "\"wyindustry\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 1810,
+      "offset": 1800,
       "length": 21,
       "value": "\"nwe_GTG4faf2qyx8ugx\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "IntegerLiteral",
-      "offset": 1891,
+      "offset": 1881,
       "length": 4,
       "value": "1883"
-    },
-    {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/DeviceWifiStatus.swift",
-      "kind": "BooleanLiteral",
-      "offset": 222,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/DeviceWifiStatus.swift",
-      "kind": "BooleanLiteral",
-      "offset": 259,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYBoardInfo.swift",

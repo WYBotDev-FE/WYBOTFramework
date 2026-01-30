@@ -401,7 +401,7 @@ public struct UpdatingErrorInfo : Swift.Codable {
   @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
   final public func searchDevice() async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.ScanDevice, any Swift.Error>
   final public func stopSearchDevice()
-  final public func refreshDevicesWanState(_ devices: [WYBOTFramework.Device]) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.DeviceWifiStatus, any Swift.Error>
+  final public func refreshDevicesWanState(_ devices: [WYBOTFramework.Device]) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.Device, any Swift.Error>
   final public func disconnect()
   final public func connectDevice(_ device: WYBOTFramework.Device) async throws -> Swift.Bool
   final public func connectPeriperal(_ periperal: CoreBluetooth.CBPeripheral) async throws -> Swift.Bool
@@ -866,6 +866,7 @@ public struct ScanDevice : Swift.Equatable, Swift.Identifiable {
   public let advDataLocalName: Swift.String
   public let peripheral: CoreBluetooth.CBPeripheral
   public let rssi: Swift.Int
+  public let name: Swift.String
   public static func == (a: WYBOTFramework.ScanDevice, b: WYBOTFramework.ScanDevice) -> Swift.Bool
   public typealias ID = Foundation.UUID
 }
@@ -1088,12 +1089,6 @@ public struct WYFunction : Swift.Codable, Swift.Equatable {
   public static func == (a: WYBOTFramework.WYFunction, b: WYBOTFramework.WYFunction) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
-}
-public struct DeviceWifiStatus : Swift.Sendable, Swift.Equatable {
-  public let deviceId: Swift.String
-  public var wifiState: Swift.Bool
-  public var hasNewVersion: Swift.Bool
-  public static func == (a: WYBOTFramework.DeviceWifiStatus, b: WYBOTFramework.DeviceWifiStatus) -> Swift.Bool
 }
 public struct WeatherData : Swift.Codable, Swift.Equatable {
   public static func == (lhs: WYBOTFramework.WeatherData, rhs: WYBOTFramework.WeatherData) -> Swift.Bool
