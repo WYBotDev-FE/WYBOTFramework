@@ -8662,57 +8662,6 @@
           },
           {
             "kind": "Function",
-            "name": "refreshDevicesWanState",
-            "printedName": "refreshDevicesWanState(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncThrowingStream",
-                "printedName": "_Concurrency.AsyncThrowingStream<WYBOTFramework.Device, any Swift.Error>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Device",
-                    "printedName": "WYBOTFramework.Device",
-                    "usr": "s:14WYBOTFramework6DeviceV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Scs"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[WYBOTFramework.Device]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Device",
-                    "printedName": "WYBOTFramework.Device",
-                    "usr": "s:14WYBOTFramework6DeviceV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14WYBOTFramework5WYLibC22refreshDevicesWanStateyScsyAA6DeviceVs5Error_pGSayAFGYaKF",
-            "mangledName": "$s14WYBOTFramework5WYLibC22refreshDevicesWanStateyScsyAA6DeviceVs5Error_pGSayAFGYaKF",
-            "moduleName": "WYBOTFramework",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "disconnect",
             "printedName": "disconnect()",
             "children": [
@@ -8728,7 +8677,8 @@
             "moduleName": "WYBOTFramework",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -10671,6 +10621,35 @@
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkWifiStatus",
+            "printedName": "checkWifiStatus(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework5WYLibC15checkWifiStatus3forSbSS_tYaF",
+            "mangledName": "$s14WYBOTFramework5WYLibC15checkWifiStatus3forSbSS_tYaF",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -11152,6 +11131,468 @@
             "usr": "s:SQ",
             "mangledName": "$sSQ"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WYBOTFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MQGroupKey",
+        "printedName": "MQGroupKey",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MQGroupKey",
+                "printedName": "WYBOTFramework.MQGroupKey",
+                "usr": "s:14WYBOTFramework10MQGroupKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MQGroupKey",
+                "printedName": "WYBOTFramework.MQGroupKey",
+                "usr": "s:14WYBOTFramework10MQGroupKeyV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework10MQGroupKeyV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14WYBOTFramework10MQGroupKeyV2eeoiySbAC_ACtFZ",
+            "moduleName": "WYBOTFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "robotId",
+            "printedName": "robotId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework10MQGroupKeyV7robotIdSSvp",
+            "mangledName": "$s14WYBOTFramework10MQGroupKeyV7robotIdSSvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework10MQGroupKeyV7robotIdSSvg",
+                "mangledName": "$s14WYBOTFramework10MQGroupKeyV7robotIdSSvg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework10MQGroupKeyV9hashValueSivp",
+            "mangledName": "$s14WYBOTFramework10MQGroupKeyV9hashValueSivp",
+            "moduleName": "WYBOTFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework10MQGroupKeyV9hashValueSivg",
+                "mangledName": "$s14WYBOTFramework10MQGroupKeyV9hashValueSivg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework10MQGroupKeyV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14WYBOTFramework10MQGroupKeyV4hash4intoys6HasherVz_tF",
+            "moduleName": "WYBOTFramework",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14WYBOTFramework10MQGroupKeyV",
+        "mangledName": "$s14WYBOTFramework10MQGroupKeyV",
+        "moduleName": "WYBOTFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MQDeviceStatus",
+        "printedName": "MQDeviceStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "robotHasUpdate",
+            "printedName": "robotHasUpdate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework14MQDeviceStatusV14robotHasUpdateSbvp",
+            "mangledName": "$s14WYBOTFramework14MQDeviceStatusV14robotHasUpdateSbvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework14MQDeviceStatusV14robotHasUpdateSbvg",
+                "mangledName": "$s14WYBOTFramework14MQDeviceStatusV14robotHasUpdateSbvg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework14MQDeviceStatusV14robotHasUpdateSbvs",
+                "mangledName": "$s14WYBOTFramework14MQDeviceStatusV14robotHasUpdateSbvs",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework14MQDeviceStatusV14robotHasUpdateSbvM",
+                "mangledName": "$s14WYBOTFramework14MQDeviceStatusV14robotHasUpdateSbvM",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "robotWifiState",
+            "printedName": "robotWifiState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14WYBOTFramework14MQDeviceStatusV14robotWifiStateSbvp",
+            "mangledName": "$s14WYBOTFramework14MQDeviceStatusV14robotWifiStateSbvp",
+            "moduleName": "WYBOTFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework14MQDeviceStatusV14robotWifiStateSbvg",
+                "mangledName": "$s14WYBOTFramework14MQDeviceStatusV14robotWifiStateSbvg",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework14MQDeviceStatusV14robotWifiStateSbvs",
+                "mangledName": "$s14WYBOTFramework14MQDeviceStatusV14robotWifiStateSbvs",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14WYBOTFramework14MQDeviceStatusV14robotWifiStateSbvM",
+                "mangledName": "$s14WYBOTFramework14MQDeviceStatusV14robotWifiStateSbvM",
+                "moduleName": "WYBOTFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MQDeviceStatus",
+                "printedName": "WYBOTFramework.MQDeviceStatus",
+                "usr": "s:14WYBOTFramework14MQDeviceStatusV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MQDeviceStatus",
+                "printedName": "WYBOTFramework.MQDeviceStatus",
+                "usr": "s:14WYBOTFramework14MQDeviceStatusV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14WYBOTFramework14MQDeviceStatusV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14WYBOTFramework14MQDeviceStatusV2eeoiySbAC_ACtFZ",
+            "moduleName": "WYBOTFramework",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14WYBOTFramework14MQDeviceStatusV",
+        "mangledName": "$s14WYBOTFramework14MQDeviceStatusV",
+        "moduleName": "WYBOTFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WYBOTFramework",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -38747,16 +39188,30 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 59902,
+      "offset": 59928,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 60031,
+      "offset": 60057,
       "length": 1,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/MQTT+Model.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1985,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/MQTT+Model.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2024,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/LightMQTT.swift",
@@ -39027,7 +39482,7 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 3304,
+      "offset": 3296,
       "length": 1,
       "value": "9"
     },
@@ -39706,56 +40161,49 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 385,
+      "offset": 390,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "BooleanLiteral",
-      "offset": 570,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
-      "kind": "BooleanLiteral",
-      "offset": 894,
+      "offset": 978,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 1649,
+      "offset": 1695,
       "length": 6,
       "value": "\"iWY-\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "IntegerLiteral",
-      "offset": 1687,
+      "offset": 1733,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 1760,
+      "offset": 1806,
       "length": 12,
       "value": "\"wyindustry\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "StringLiteral",
-      "offset": 1800,
+      "offset": 1846,
       "length": 21,
       "value": "\"nwe_GTG4faf2qyx8ugx\""
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/MQTT\/WYMQTT.swift",
       "kind": "IntegerLiteral",
-      "offset": 1881,
+      "offset": 1927,
       "length": 4,
       "value": "1883"
     },

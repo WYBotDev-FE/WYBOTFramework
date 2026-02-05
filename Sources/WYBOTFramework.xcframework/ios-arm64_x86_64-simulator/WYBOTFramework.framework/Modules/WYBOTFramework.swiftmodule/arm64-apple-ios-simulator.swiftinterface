@@ -401,7 +401,6 @@ public struct UpdatingErrorInfo : Swift.Codable {
   @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
   final public func searchDevice() async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.ScanDevice, any Swift.Error>
   final public func stopSearchDevice()
-  final public func refreshDevicesWanState(_ devices: [WYBOTFramework.Device]) async throws -> _Concurrency.AsyncThrowingStream<WYBOTFramework.Device, any Swift.Error>
   final public func disconnect()
   final public func connectDevice(_ device: WYBOTFramework.Device) async throws -> Swift.Bool
   final public func connectPeriperal(_ periperal: CoreBluetooth.CBPeripheral) async throws -> Swift.Bool
@@ -476,6 +475,22 @@ public struct User : Swift.Codable, Swift.Equatable {
   public static func == (a: WYBOTFramework.User, b: WYBOTFramework.User) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+public struct MQGroupKey : Swift.Sendable, Swift.Equatable, Swift.Hashable {
+  public static func == (lhs: WYBOTFramework.MQGroupKey, rhs: WYBOTFramework.MQGroupKey) -> Swift.Bool
+  public let robotId: Swift.String
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct MQDeviceStatus : Swift.Sendable, Swift.Equatable {
+  public var robotHasUpdate: Swift.Bool
+  public var robotWifiState: Swift.Bool
+  public static func == (a: WYBOTFramework.MQDeviceStatus, b: WYBOTFramework.MQDeviceStatus) -> Swift.Bool
+}
+extension WYBOTFramework.WYLib {
+  final public func checkWifiStatus(for deviceId: Swift.String) async -> Swift.Bool
 }
 public enum WYError : Swift.Error, Swift.Identifiable, Swift.Equatable {
   public var id: Swift.String {
