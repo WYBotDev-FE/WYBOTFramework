@@ -14,19 +14,19 @@
 		</data>
 		<key>Modules/WYBOTFramework.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		/um0ITeJjSiX6PopFjOQWjkXBWU=
+		oX+CudN5A9XVutibQfvv8V3wU1E=
 		</data>
 		<key>Modules/WYBOTFramework.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		DqJ2nV3f80tW82Uk9AHyQJ3xyRk=
+		4iHFJTmQ6tqRmw4w4YL0dGexBvc=
 		</data>
 		<key>Modules/WYBOTFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		MEWRu9XIkRvVf1Bw/CFeOlFk9+Q=
+		8ZIx6kFxWl7eWrd6S76G5apbI2g=
 		</data>
 		<key>Modules/WYBOTFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		L3EkR8mVo6uUagG/cu8kkmhcrwI=
+		KE9HpY9hogloVUtt1dwiy7IZ7qg=
 		</data>
 		<key>Modules/WYBOTFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/WYBOTFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		L3EkR8mVo6uUagG/cu8kkmhcrwI=
+		KE9HpY9hogloVUtt1dwiy7IZ7qg=
 		</data>
 		<key>Modules/WYBOTFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		K0awuPmuxqwKCiCWnnrL+CT+ioY=
+		/dWzT65FM1PdkF6gB9MHU+gFXrY=
 		</data>
 		<key>Modules/WYBOTFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		MEWRu9XIkRvVf1Bw/CFeOlFk9+Q=
+		8ZIx6kFxWl7eWrd6S76G5apbI2g=
 		</data>
 		<key>Modules/WYBOTFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		GsT911BytKFK1c62Ol/0X8lNtug=
+		u5dopFf0N5QfnpPtaG82HR3vDbA=
 		</data>
 		<key>Modules/WYBOTFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/WYBOTFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GsT911BytKFK1c62Ol/0X8lNtug=
+		u5dopFf0N5QfnpPtaG82HR3vDbA=
 		</data>
 		<key>Modules/WYBOTFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		afYblUMRV9T1r6d93J1JivVTQDk=
+		1bOXYfES1OV5YZeSmEDRnZyG5Hw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,44 +82,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/um0ITeJjSiX6PopFjOQWjkXBWU=
+			oX+CudN5A9XVutibQfvv8V3wU1E=
 			</data>
 			<key>hash2</key>
 			<data>
-			SwYX2YzTBdrL3298PIvzTFO0QcAchQMk+v0pDYiC+kU=
+			RwTtVOTP+fPGP4/t1ioiwAB9pNIGVDnQA9igFF0wB4o=
 			</data>
 		</dict>
 		<key>Modules/WYBOTFramework.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DqJ2nV3f80tW82Uk9AHyQJ3xyRk=
+			4iHFJTmQ6tqRmw4w4YL0dGexBvc=
 			</data>
 			<key>hash2</key>
 			<data>
-			CoWoXyd3HaIsUFR2CPBv0P26jLZh0q1YZIcgbUWkfi8=
+			LMio3/cWLyE/r29NSacZ8VVhkytx+w+sA4DxcAGMRD0=
 			</data>
 		</dict>
 		<key>Modules/WYBOTFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MEWRu9XIkRvVf1Bw/CFeOlFk9+Q=
+			8ZIx6kFxWl7eWrd6S76G5apbI2g=
 			</data>
 			<key>hash2</key>
 			<data>
-			QkUWinTuZ6ws3VClXmVU1Lv9EmT2i5orSKDnX7z3x7I=
+			TNodXKfCQ5e3yTfkzQjAQ/hiOYkqXRCQP4oA9eYtBu4=
 			</data>
 		</dict>
 		<key>Modules/WYBOTFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L3EkR8mVo6uUagG/cu8kkmhcrwI=
+			KE9HpY9hogloVUtt1dwiy7IZ7qg=
 			</data>
 			<key>hash2</key>
 			<data>
-			tEaYNSZugeghP8HV/5vrdlZHKzO8X1+BwIxSX3KJVMs=
+			CahY0xCxvguN61LTfhndOkuNZaL6GWO9dbKt8FTHfSE=
 			</data>
 		</dict>
 		<key>Modules/WYBOTFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -137,44 +137,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L3EkR8mVo6uUagG/cu8kkmhcrwI=
+			KE9HpY9hogloVUtt1dwiy7IZ7qg=
 			</data>
 			<key>hash2</key>
 			<data>
-			tEaYNSZugeghP8HV/5vrdlZHKzO8X1+BwIxSX3KJVMs=
+			CahY0xCxvguN61LTfhndOkuNZaL6GWO9dbKt8FTHfSE=
 			</data>
 		</dict>
 		<key>Modules/WYBOTFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K0awuPmuxqwKCiCWnnrL+CT+ioY=
+			/dWzT65FM1PdkF6gB9MHU+gFXrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			t+8COlqbOnYbElU2ZckzIEiXHFp7viCo8vzxXeC/puw=
+			4b+5DC+MHpy39DV7vHl7N2Lz9kJVqASlINYFvNTg5rI=
 			</data>
 		</dict>
 		<key>Modules/WYBOTFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MEWRu9XIkRvVf1Bw/CFeOlFk9+Q=
+			8ZIx6kFxWl7eWrd6S76G5apbI2g=
 			</data>
 			<key>hash2</key>
 			<data>
-			QkUWinTuZ6ws3VClXmVU1Lv9EmT2i5orSKDnX7z3x7I=
+			TNodXKfCQ5e3yTfkzQjAQ/hiOYkqXRCQP4oA9eYtBu4=
 			</data>
 		</dict>
 		<key>Modules/WYBOTFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GsT911BytKFK1c62Ol/0X8lNtug=
+			u5dopFf0N5QfnpPtaG82HR3vDbA=
 			</data>
 			<key>hash2</key>
 			<data>
-			MlqiHn5UQeyKRdQpBuatCkkOe7+J3X63jwiLk2bd1K0=
+			VUznX5Mi3TpStDJnhPLJG8q2PGcHlnVp8ufLM6hdgqw=
 			</data>
 		</dict>
 		<key>Modules/WYBOTFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -192,22 +192,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GsT911BytKFK1c62Ol/0X8lNtug=
+			u5dopFf0N5QfnpPtaG82HR3vDbA=
 			</data>
 			<key>hash2</key>
 			<data>
-			MlqiHn5UQeyKRdQpBuatCkkOe7+J3X63jwiLk2bd1K0=
+			VUznX5Mi3TpStDJnhPLJG8q2PGcHlnVp8ufLM6hdgqw=
 			</data>
 		</dict>
 		<key>Modules/WYBOTFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			afYblUMRV9T1r6d93J1JivVTQDk=
+			1bOXYfES1OV5YZeSmEDRnZyG5Hw=
 			</data>
 			<key>hash2</key>
 			<data>
-			NJN+lpsEqfDRgp6OSduFKBeV/4MGHqIlGqtA2NSRTno=
+			ixmUQRdRv9wmV+BaiAB2A8TaTF+LlS4kVOIjYhdedR4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

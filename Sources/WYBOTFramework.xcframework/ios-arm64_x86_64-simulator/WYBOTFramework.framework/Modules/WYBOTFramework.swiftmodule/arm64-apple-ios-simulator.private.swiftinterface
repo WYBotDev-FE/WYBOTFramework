@@ -524,49 +524,6 @@ extension WYBOTFramework.WYError : Foundation.LocalizedError {
     get
   }
 }
-final public class LightMQTT {
-  public enum MQTTMessageParserState {
-    case decodingHeader
-    case decodingLength
-    case decodingData
-    public static func == (a: WYBOTFramework.LightMQTT.MQTTMessageParserState, b: WYBOTFramework.LightMQTT.MQTTMessageParserState) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  final public var receivingMessage: ((_ topic: Swift.String, _ message: Swift.String) -> ())?
-  final public var receivingBuffer: ((_ topic: Swift.String, _ buffer: Swift.UnsafeBufferPointer<Swift.UTF8.CodeUnit>) -> ())?
-  final public var receivingBytes: ((_ topic: Swift.String, _ bytes: [Swift.UTF8.CodeUnit]) -> ())?
-  final public var receivingData: ((_ topic: Swift.String, _ data: Foundation.Data) -> ())?
-  public struct Options {
-    public var port: Swift.Int?
-    public var pingInterval: Swift.UInt16
-    public var useTLS: Swift.Bool
-    public var securityLevel: Foundation.StreamSocketSecurityLevel
-    public var allowUntrustCACertificate: Swift.Bool
-    public var networkServiceType: Foundation.StreamNetworkServiceTypeValue
-    public var username: Swift.String?
-    public var password: Swift.String?
-    public var clientId: Swift.String?
-    public var bufferSize: Swift.Int
-    public var readQosClass: Dispatch.DispatchQoS.QoSClass
-    public var concretePort: Swift.Int {
-      get
-    }
-    public init(port: Swift.Int? = nil, pingInterval: Swift.UInt16 = 10, useTLS: Swift.Bool = false, securityLevel: Foundation.StreamSocketSecurityLevel = StreamSocketSecurityLevel.tlSv1, allowUntrustCACertificate: Swift.Bool = false, networkServiceType: Foundation.StreamNetworkServiceTypeValue = StreamNetworkServiceTypeValue.background, username: Swift.String? = nil, password: Swift.String? = nil, clientId: Swift.String? = nil, bufferSize: Swift.Int = 4096, readQosClass: Dispatch.DispatchQoS.QoSClass = .background)
-  }
-  public init(host: Swift.String, options: WYBOTFramework.LightMQTT.Options = Options())
-  @objc deinit
-  final public var isConnected: Swift.Bool {
-    get
-  }
-  final public func connect(completion: ((_ success: Swift.Bool) -> ())? = nil)
-  final public func disconnect(streams: (input: Foundation.InputStream, output: Foundation.OutputStream)? = nil)
-  final public func subscribe(to topic: Swift.String)
-  final public func unsubscribe(from topic: Swift.String)
-  final public func publish(to topic: Swift.String, message: Foundation.Data?)
-}
 extension Swift.Array {
   public func filterDuplicates<E>(_ filter: (Element) -> E) -> [Element] where E : Swift.Equatable
 }
@@ -1218,8 +1175,6 @@ public func wyPrintWithLine(_ content: Swift.String, identifier: Swift.String = 
 extension Swift.Array {
   public func format() -> Swift.String
 }
-extension WYBOTFramework.LightMQTT.MQTTMessageParserState : Swift.Equatable {}
-extension WYBOTFramework.LightMQTT.MQTTMessageParserState : Swift.Hashable {}
 extension WYBOTFramework.WYStatus : Swift.Equatable {}
 extension WYBOTFramework.WYStatus : Swift.Hashable {}
 extension WYBOTFramework.WYStatus : Swift.RawRepresentable {}
