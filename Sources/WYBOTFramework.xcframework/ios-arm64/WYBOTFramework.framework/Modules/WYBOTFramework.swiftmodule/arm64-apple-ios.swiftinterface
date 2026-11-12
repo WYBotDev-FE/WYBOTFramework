@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name WYBOTFramework
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name WYBOTFramework
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CoreBluetooth
 import CryptoKit
 import Foundation
@@ -21,45 +21,45 @@ extension CoreBluetooth.CBPeripheral {
   }
 }
 public struct WYGroup : WYBOTFramework.CodableDefaultValue, Swift.Identifiable, Swift.Equatable {
-  @WYBOTFramework.CodableDefault public var id: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var id: Swift.String {
     get
   }
-  @WYBOTFramework.CodableDefault public var name: Swift.String {
-    get
-    set
-    _modify
-  }
-  @WYBOTFramework.CodableDefault public var device: WYBOTFramework.Device {
+  @WYBOTFramework.CodableDefault<Swift.String> public var name: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var docker: WYBOTFramework.Docker {
+  @WYBOTFramework.CodableDefault<WYBOTFramework.Device> public var device: WYBOTFramework.Device {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var vision: WYBOTFramework.Vision {
+  @WYBOTFramework.CodableDefault<WYBOTFramework.Docker> public var docker: WYBOTFramework.Docker {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var poolId: Swift.Int {
+  @WYBOTFramework.CodableDefault<WYBOTFramework.Vision> public var vision: WYBOTFramework.Vision {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var autoUpdate: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Int> public var poolId: Swift.Int {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var mqttSubscriberID: Swift.String? {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var autoUpdate: Swift.Bool {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var mqttSubscriberTopic: Swift.String? {
+  @WYBOTFramework.CodableDefault<Swift.String?> public var mqttSubscriberID: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @WYBOTFramework.CodableDefault<Swift.String?> public var mqttSubscriberTopic: Swift.String? {
     get
     set
     _modify
@@ -74,42 +74,42 @@ public struct Vision : WYBOTFramework.CodableDefaultValue, Swift.Equatable {
   public var id: Swift.String {
     get
   }
-  @WYBOTFramework.CodableDefault public var visionId: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var visionId: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var privacy: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var privacy: Swift.Bool {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var video: Swift.String? {
+  @WYBOTFramework.CodableDefault<Swift.String?> public var video: Swift.String? {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var pictrue: Swift.String? {
+  @WYBOTFramework.CodableDefault<Swift.String?> public var pictrue: Swift.String? {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var log: Swift.String? {
+  @WYBOTFramework.CodableDefault<Swift.String?> public var log: Swift.String? {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var policy: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var policy: Swift.Bool {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var hasUpdate: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var hasUpdate: Swift.Bool {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var version: [WYBOTFramework.BoardVersion] {
+  @WYBOTFramework.CodableDefault<[WYBOTFramework.BoardVersion]> public var version: [WYBOTFramework.BoardVersion] {
     get
     set
     _modify
@@ -124,57 +124,57 @@ public struct Docker : WYBOTFramework.CodableDefaultValue, Swift.Identifiable, S
   public var id: Swift.String {
     get
   }
-  @WYBOTFramework.CodableDefault public var dockerId: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var dockerId: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var dockerType: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var dockerType: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var bleName: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var bleName: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var deviceStatus: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var deviceStatus: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var dockerStatus: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var dockerStatus: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var schedule: Swift.String? {
+  @WYBOTFramework.CodableDefault<Swift.String?> public var schedule: Swift.String? {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var groupId: Swift.String? {
+  @WYBOTFramework.CodableDefault<Swift.String?> public var groupId: Swift.String? {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var version: [WYBOTFramework.BoardVersion] {
+  @WYBOTFramework.CodableDefault<[WYBOTFramework.BoardVersion]> public var version: [WYBOTFramework.BoardVersion] {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var bleState: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var bleState: Swift.Bool {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var wifiState: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var wifiState: Swift.Bool {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var hasUpdate: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var hasUpdate: Swift.Bool {
     get
     set
     _modify
@@ -190,67 +190,67 @@ public struct Device : WYBOTFramework.CodableDefaultValue, Swift.Identifiable, S
   public var id: Swift.String {
     get
   }
-  @WYBOTFramework.CodableDefault public var deviceId: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var deviceId: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var deviceName: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var deviceName: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var deviceType: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var deviceType: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var bleName: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var bleName: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var poolId: Swift.Int {
+  @WYBOTFramework.CodableDefault<Swift.Int> public var poolId: Swift.Int {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var autoUpdate: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var autoUpdate: Swift.Bool {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var version: [WYBOTFramework.BoardVersion] {
+  @WYBOTFramework.CodableDefault<[WYBOTFramework.BoardVersion]> public var version: [WYBOTFramework.BoardVersion] {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var groupId: Swift.String? {
+  @WYBOTFramework.CodableDefault<Swift.String?> public var groupId: Swift.String? {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var visionID: Swift.String? {
+  @WYBOTFramework.CodableDefault<Swift.String?> public var visionID: Swift.String? {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var deviceVersion: WYBOTFramework.DeviceVersion? {
+  @WYBOTFramework.CodableDefault<WYBOTFramework.DeviceVersion?> public var deviceVersion: WYBOTFramework.DeviceVersion? {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var bleState: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var bleState: Swift.Bool {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var wifiState: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var wifiState: Swift.Bool {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var hasUpdate: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var hasUpdate: Swift.Bool {
     get
     set
     _modify
@@ -263,17 +263,17 @@ public struct Device : WYBOTFramework.CodableDefaultValue, Swift.Identifiable, S
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct BoardVersion : WYBOTFramework.CodableDefaultValue, Swift.Equatable {
-  @WYBOTFramework.CodableDefault public var borad: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var borad: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var hardware: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var hardware: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var software: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var software: Swift.String {
     get
     set
     _modify
@@ -286,17 +286,17 @@ public struct BoardVersion : WYBOTFramework.CodableDefaultValue, Swift.Equatable
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct DeviceVersion : WYBOTFramework.CodableDefaultValue, Swift.Equatable {
-  @WYBOTFramework.CodableDefault public var boardType: WYBOTFramework.WYBoardType {
+  @WYBOTFramework.CodableDefault<WYBOTFramework.WYBoardType> public var boardType: WYBOTFramework.WYBoardType {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var hardVer: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var hardVer: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var solfVer: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var solfVer: Swift.String {
     get
     set
     _modify
@@ -308,42 +308,42 @@ public struct DeviceVersion : WYBOTFramework.CodableDefaultValue, Swift.Equatabl
 }
 public struct FirmwareInfo : WYBOTFramework.CodableDefaultValue, Swift.Equatable, Swift.Identifiable {
   public var id: Foundation.UUID
-  @WYBOTFramework.CodableDefault public var BoardID: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var BoardID: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var Hardware: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var Hardware: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var SoftwareVer: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var SoftwareVer: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var Release: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var Release: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var Url: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var Url: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var Md5: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var Md5: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var Manual: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var Manual: Swift.Bool {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var Enforce: Swift.Bool {
+  @WYBOTFramework.CodableDefault<Swift.Bool> public var Enforce: Swift.Bool {
     get
     set
     _modify
@@ -772,22 +772,22 @@ public typealias DataObj<T> = WYBOTFramework.ResponseData<T> where T : Swift.Dec
 public typealias DataEmpty = WYBOTFramework.ResponseData<WYBOTFramework.ResponseEmpty>
 public struct ResponseData<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable, T : Swift.Sendable, T : WYBOTFramework.DefaultValue {
   public init(code: Swift.Int, message: Swift.String)
-  @WYBOTFramework.CodableDefault public var code: Swift.Int {
+  @WYBOTFramework.CodableDefault<Swift.Int> public var code: Swift.Int {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var message: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var message: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var reason: Swift.String {
+  @WYBOTFramework.CodableDefault<Swift.String> public var reason: Swift.String {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var metadata: T {
+  @WYBOTFramework.CodableDefault<T> public var metadata: T {
     get
     set
     _modify
@@ -803,7 +803,7 @@ public struct ResponseData<T> : Swift.Codable where T : Swift.Decodable, T : Swi
 }
 public struct ResponseList<T> : WYBOTFramework.CodableDefaultValue, Swift.CustomStringConvertible where T : Swift.Decodable, T : Swift.Encodable, T : Swift.Sendable, T : WYBOTFramework.DefaultValue {
   public init()
-  @WYBOTFramework.CodableDefault public var notifications: [T] {
+  @WYBOTFramework.CodableDefault<[T]> public var notifications: [T] {
     get
     set
     _modify
@@ -811,12 +811,12 @@ public struct ResponseList<T> : WYBOTFramework.CodableDefaultValue, Swift.Custom
   public var list: [T] {
     get
   }
-  @WYBOTFramework.CodableDefault public var page: Swift.Int {
+  @WYBOTFramework.CodableDefault<Swift.Int> public var page: Swift.Int {
     get
     set
     _modify
   }
-  @WYBOTFramework.CodableDefault public var total: Swift.Int {
+  @WYBOTFramework.CodableDefault<Swift.Int> public var total: Swift.Int {
     get
     set
     _modify
