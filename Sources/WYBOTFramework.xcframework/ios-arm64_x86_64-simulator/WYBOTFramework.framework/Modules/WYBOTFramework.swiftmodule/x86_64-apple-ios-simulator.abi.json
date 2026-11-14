@@ -37350,16 +37350,23 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 3307,
+      "offset": 3301,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
       "kind": "StringLiteral",
-      "offset": 7210,
+      "offset": 7198,
       "length": 5,
       "value": "\"UTC\""
+    },
+    {
+      "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Ble\/WYDataPoint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7823,
+      "length": 13,
+      "value": "1767225600"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/Model\/WYDP.swift",
