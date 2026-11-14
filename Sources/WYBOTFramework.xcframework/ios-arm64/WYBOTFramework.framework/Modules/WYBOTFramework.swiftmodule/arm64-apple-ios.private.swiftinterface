@@ -438,8 +438,8 @@ public struct UpdatingErrorInfo : Swift.Codable {
   final public func setCycleTimer(_ timer: WYBOTFramework.WYCycleTimer) async throws -> WYBOTFramework.WYCycleTimer
   final public func setCycleTimer(_ timer: WYBOTFramework.WYCycleTimer, to deviceId: Swift.String, with token: Swift.String) async throws -> WYBOTFramework.WYCycleTimer
   final public func weekTimer(deviceId: Swift.String) async throws -> [WYBOTFramework.WYWeekPlan]
-  final public func setWeekTimer(plans: [WYBOTFramework.WYWeekPlan]) async throws -> Swift.Bool
-  final public func setWeekTimer(_ plans: [WYBOTFramework.WYWeekPlan], deviceId: Swift.String, token: Swift.String) async throws -> Swift.Bool
+  final public func setWeekTimer(plans: [WYBOTFramework.WYWeekPlan])
+  final public func setWeekTimer(_ plans: [WYBOTFramework.WYWeekPlan], deviceId: Swift.String, token: Swift.String)
   final public func wakeLteUp(deviceId: Swift.String, token: Swift.String)
   final public func floorPattern(deviceId: Swift.String) async throws -> WYBOTFramework.WYPatterns
   final public func wallPattern(deviceId: Swift.String) async throws -> WYBOTFramework.WYPatterns

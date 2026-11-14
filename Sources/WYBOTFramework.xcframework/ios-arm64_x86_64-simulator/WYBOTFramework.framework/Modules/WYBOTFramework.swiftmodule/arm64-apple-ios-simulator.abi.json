@@ -9899,9 +9899,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
@@ -9919,14 +9918,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14WYBOTFramework5WYLibC12setWeekTimer5plansSbSayAA10WYWeekPlanVG_tYaKF",
-            "mangledName": "$s14WYBOTFramework5WYLibC12setWeekTimer5plansSbSayAA10WYWeekPlanVG_tYaKF",
+            "usr": "s:14WYBOTFramework5WYLibC12setWeekTimer5plansySayAA10WYWeekPlanVG_tF",
+            "mangledName": "$s14WYBOTFramework5WYLibC12setWeekTimer5plansySayAA10WYWeekPlanVG_tF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
               "Final",
               "AccessControl"
             ],
-            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -9936,9 +9934,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
@@ -9968,14 +9965,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14WYBOTFramework5WYLibC12setWeekTimer_8deviceId5tokenSbSayAA10WYWeekPlanVG_S2StYaKF",
-            "mangledName": "$s14WYBOTFramework5WYLibC12setWeekTimer_8deviceId5tokenSbSayAA10WYWeekPlanVG_S2StYaKF",
+            "usr": "s:14WYBOTFramework5WYLibC12setWeekTimer_8deviceId5tokenySayAA10WYWeekPlanVG_S2StF",
+            "mangledName": "$s14WYBOTFramework5WYLibC12setWeekTimer_8deviceId5tokenySayAA10WYWeekPlanVG_S2StF",
             "moduleName": "WYBOTFramework",
             "declAttributes": [
               "Final",
               "AccessControl"
             ],
-            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -37053,14 +37049,14 @@
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 59928,
+      "offset": 60486,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/young\/WYCodes\/wybotFrameworkBrazil\/WYBOTFramework\/Sources\/WYBOTLib\/WYLib.swift",
       "kind": "IntegerLiteral",
-      "offset": 60057,
+      "offset": 60615,
       "length": 1,
       "value": "1"
     },
